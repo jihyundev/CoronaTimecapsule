@@ -38,6 +38,8 @@
 		59E9721B25FB174D008A7EF9 /* NicknameSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E9721925FB174D008A7EF9 /* NicknameSettingViewController.swift */; };
 		59E9721C25FB174D008A7EF9 /* NicknameSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59E9721A25FB174D008A7EF9 /* NicknameSettingViewController.xib */; };
 		59E9722025FB1B4B008A7EF9 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E9721F25FB1B4B008A7EF9 /* ListViewController.swift */; };
+		59E9722F25FB4377008A7EF9 /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E9722E25FB4377008A7EF9 /* UserDataManager.swift */; };
+		59E9723425FB4CE6008A7EF9 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E9723325FB4CE6008A7EF9 /* UserModel.swift */; };
 		F0E0C21CF00377B604A32779 /* Pods_TimeCapsule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2289D2F06BEABFE9B4FBB6 /* Pods_TimeCapsule.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +77,8 @@
 		59E9721925FB174D008A7EF9 /* NicknameSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameSettingViewController.swift; sourceTree = "<group>"; };
 		59E9721A25FB174D008A7EF9 /* NicknameSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NicknameSettingViewController.xib; sourceTree = "<group>"; };
 		59E9721F25FB1B4B008A7EF9 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		59E9722E25FB4377008A7EF9 /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
+		59E9723325FB4CE6008A7EF9 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		93F7264C0501EC697F9620A9 /* Pods-TimeCapsule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeCapsule.debug.xcconfig"; path = "Target Support Files/Pods-TimeCapsule/Pods-TimeCapsule.debug.xcconfig"; sourceTree = "<group>"; };
 		B49921E902CEC8BEA144F303 /* Pods-TimeCapsule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeCapsule.release.xcconfig"; path = "Target Support Files/Pods-TimeCapsule/Pods-TimeCapsule.release.xcconfig"; sourceTree = "<group>"; };
 		EF2289D2F06BEABFE9B4FBB6 /* Pods_TimeCapsule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeCapsule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -249,6 +253,7 @@
 		59E971F925FB058E008A7EF9 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				59E9722E25FB4377008A7EF9 /* UserDataManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 		59E971FA25FB0598008A7EF9 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				59E9723325FB4CE6008A7EF9 /* UserModel.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -432,12 +438,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				59E9720825FB0722008A7EF9 /* LoginViewController.swift in Sources */,
+				59E9722F25FB4377008A7EF9 /* UserDataManager.swift in Sources */,
 				59E9721B25FB174D008A7EF9 /* NicknameSettingViewController.swift in Sources */,
 				59E971DB25FB003B008A7EF9 /* UIView.swift in Sources */,
 				59E971B125FB0007008A7EF9 /* ViewController.swift in Sources */,
 				59E971AD25FB0007008A7EF9 /* AppDelegate.swift in Sources */,
 				59E971DF25FB003B008A7EF9 /* UINavigationBar.swift in Sources */,
 				59E9720F25FB0EB6008A7EF9 /* WishViewController.swift in Sources */,
+				59E9723425FB4CE6008A7EF9 /* UserModel.swift in Sources */,
 				59E971DC25FB003B008A7EF9 /* String.swift in Sources */,
 				59E971DA25FB003B008A7EF9 /* Date.swift in Sources */,
 				59E971DD25FB003B008A7EF9 /* UIButton.swift in Sources */,

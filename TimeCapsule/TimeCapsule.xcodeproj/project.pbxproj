@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		252076EE25FB3A8D004366E4 /* AddWishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252076EC25FB3A8D004366E4 /* AddWishViewController.swift */; };
+		252076EF25FB3A8D004366E4 /* AddWishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 252076ED25FB3A8D004366E4 /* AddWishViewController.xib */; };
+		252076F925FB44E0004366E4 /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252076F725FB44E0004366E4 /* TagCollectionViewCell.swift */; };
+		252076FA25FB44E0004366E4 /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 252076F825FB44E0004366E4 /* TagCollectionViewCell.xib */; };
+		2520770225FB5235004366E4 /* CapsuleNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2520770025FB5235004366E4 /* CapsuleNameViewController.swift */; };
+		2520770325FB5235004366E4 /* CapsuleNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2520770125FB5235004366E4 /* CapsuleNameViewController.xib */; };
+		2520770A25FB5E55004366E4 /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2520770825FB5E55004366E4 /* NicknameViewController.swift */; };
+		2520770B25FB5E55004366E4 /* NicknameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2520770925FB5E55004366E4 /* NicknameViewController.xib */; };
 		59E971AD25FB0007008A7EF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E971AC25FB0007008A7EF9 /* AppDelegate.swift */; };
 		59E971AF25FB0007008A7EF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E971AE25FB0007008A7EF9 /* SceneDelegate.swift */; };
 		59E971B125FB0007008A7EF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E971B025FB0007008A7EF9 /* ViewController.swift */; };
@@ -44,6 +52,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		252076EC25FB3A8D004366E4 /* AddWishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWishViewController.swift; sourceTree = "<group>"; };
+		252076ED25FB3A8D004366E4 /* AddWishViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddWishViewController.xib; sourceTree = "<group>"; };
+		252076F725FB44E0004366E4 /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
+		252076F825FB44E0004366E4 /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
+		2520770025FB5235004366E4 /* CapsuleNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleNameViewController.swift; sourceTree = "<group>"; };
+		2520770125FB5235004366E4 /* CapsuleNameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CapsuleNameViewController.xib; sourceTree = "<group>"; };
+		2520770825FB5E55004366E4 /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
+		2520770925FB5E55004366E4 /* NicknameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NicknameViewController.xib; sourceTree = "<group>"; };
 		59E971A925FB0007008A7EF9 /* TimeCapsule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeCapsule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E971AC25FB0007008A7EF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59E971AE25FB0007008A7EF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +119,43 @@
 				B49921E902CEC8BEA144F303 /* Pods-TimeCapsule.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		252076F625FB44CC004366E4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				252076F725FB44E0004366E4 /* TagCollectionViewCell.swift */,
+				252076F825FB44E0004366E4 /* TagCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		252076FE25FB51F1004366E4 /* Capsule */ = {
+			isa = PBXGroup;
+			children = (
+				2520770025FB5235004366E4 /* CapsuleNameViewController.swift */,
+				2520770125FB5235004366E4 /* CapsuleNameViewController.xib */,
+			);
+			path = Capsule;
+			sourceTree = "<group>";
+		};
+		252076FF25FB5203004366E4 /* AddWish */ = {
+			isa = PBXGroup;
+			children = (
+				252076F625FB44CC004366E4 /* Cell */,
+				252076EC25FB3A8D004366E4 /* AddWishViewController.swift */,
+				252076ED25FB3A8D004366E4 /* AddWishViewController.xib */,
+			);
+			path = AddWish;
+			sourceTree = "<group>";
+		};
+		2520770625FB5DEF004366E4 /* Nickname */ = {
+			isa = PBXGroup;
+			children = (
+				2520770825FB5E55004366E4 /* NicknameViewController.swift */,
+				2520770925FB5E55004366E4 /* NicknameViewController.xib */,
+			);
+			path = Nickname;
 			sourceTree = "<group>";
 		};
 		59E971A025FB0007008A7EF9 = {
@@ -219,6 +272,9 @@
 		59E971F125FB0475008A7EF9 /* Wish */ = {
 			isa = PBXGroup;
 			children = (
+				2520770625FB5DEF004366E4 /* Nickname */,
+				252076FE25FB51F1004366E4 /* Capsule */,
+				252076FF25FB5203004366E4 /* AddWish */,
 				59E9720D25FB0EB6008A7EF9 /* WishViewController.swift */,
 				59E9720E25FB0EB6008A7EF9 /* WishViewController.xib */,
 				59E971FC25FB05A7008A7EF9 /* Entity */,
@@ -377,12 +433,16 @@
 			files = (
 				59E9721C25FB174D008A7EF9 /* NicknameSettingViewController.xib in Resources */,
 				59E9720925FB0722008A7EF9 /* LoginViewController.xib in Resources */,
+				2520770325FB5235004366E4 /* CapsuleNameViewController.xib in Resources */,
 				59E971E425FB003B008A7EF9 /* NotoSansCJKkr-Regular.otf in Resources */,
+				2520770B25FB5E55004366E4 /* NicknameViewController.xib in Resources */,
 				59E971B925FB000C008A7EF9 /* LaunchScreen.storyboard in Resources */,
 				59E971B625FB000C008A7EF9 /* Assets.xcassets in Resources */,
 				59E971B425FB0007008A7EF9 /* Main.storyboard in Resources */,
+				252076EF25FB3A8D004366E4 /* AddWishViewController.xib in Resources */,
 				59E9721025FB0EB6008A7EF9 /* WishViewController.xib in Resources */,
 				59E9721625FB1581008A7EF9 /* MainViewController.xib in Resources */,
+				252076FA25FB44E0004366E4 /* TagCollectionViewCell.xib in Resources */,
 				59E971E325FB003B008A7EF9 /* NotoSansCJKkr-Medium.otf in Resources */,
 				59E971E525FB003B008A7EF9 /* NotoSansCJKkr-Bold.otf in Resources */,
 			);
@@ -441,13 +501,16 @@
 				59E9722F25FB4377008A7EF9 /* UserDataManager.swift in Sources */,
 				59E9721B25FB174D008A7EF9 /* NicknameSettingViewController.swift in Sources */,
 				59E971DB25FB003B008A7EF9 /* UIView.swift in Sources */,
+				252076EE25FB3A8D004366E4 /* AddWishViewController.swift in Sources */,
 				59E971B125FB0007008A7EF9 /* ViewController.swift in Sources */,
 				59E971AD25FB0007008A7EF9 /* AppDelegate.swift in Sources */,
+				252076F925FB44E0004366E4 /* TagCollectionViewCell.swift in Sources */,
 				59E971DF25FB003B008A7EF9 /* UINavigationBar.swift in Sources */,
 				59E9720F25FB0EB6008A7EF9 /* WishViewController.swift in Sources */,
 				59E9723425FB4CE6008A7EF9 /* UserModel.swift in Sources */,
 				59E971DC25FB003B008A7EF9 /* String.swift in Sources */,
 				59E971DA25FB003B008A7EF9 /* Date.swift in Sources */,
+				2520770A25FB5E55004366E4 /* NicknameViewController.swift in Sources */,
 				59E971DD25FB003B008A7EF9 /* UIButton.swift in Sources */,
 				59E971F525FB0512008A7EF9 /* UIViewController.swift in Sources */,
 				59E971AF25FB0007008A7EF9 /* SceneDelegate.swift in Sources */,
@@ -459,6 +522,7 @@
 				59E971E625FB003B008A7EF9 /* BaseViewController.swift in Sources */,
 				59E971D825FB003B008A7EF9 /* IndicatorView.swift in Sources */,
 				59E971E225FB003B008A7EF9 /* KobisKey.swift in Sources */,
+				2520770225FB5235004366E4 /* CapsuleNameViewController.swift in Sources */,
 				59E9721525FB1581008A7EF9 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

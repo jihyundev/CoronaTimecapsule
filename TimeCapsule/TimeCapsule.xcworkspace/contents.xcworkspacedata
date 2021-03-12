@@ -2,12 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:NicknameViewController.swift">
-   </FileRef>
-   <FileRef
-      location = "group:NicknameViewController.xib">
-   </FileRef>
-   <FileRef
       location = "group:TimeCapsule.xcodeproj">
    </FileRef>
    <FileRef

@@ -17,12 +17,7 @@ class WishViewController: UIViewController {
 
     @IBAction func mainButtonTapped(_ sender: Any) {
         guard let pvc = self.presentingViewController else { return }
-//        let nextVC = MainViewController()
-//        nextVC.modalPresentationStyle = .overCurrentContext
-//        self.dismiss(animated: true) {
-//            pvc.present(nextVC, animated: true, completion: nil)
-//        }
-        let nextVC = AddWishViewController()
+        let nextVC = MainViewController()
         nextVC.modalPresentationStyle = .overCurrentContext
         self.dismiss(animated: true) {
             pvc.present(nextVC, animated: true, completion: nil)

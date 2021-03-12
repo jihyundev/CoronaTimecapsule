@@ -28,11 +28,16 @@
 		59E971E425FB003B008A7EF9 /* NotoSansCJKkr-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 59E971D325FB003B008A7EF9 /* NotoSansCJKkr-Regular.otf */; };
 		59E971E525FB003B008A7EF9 /* NotoSansCJKkr-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 59E971D425FB003B008A7EF9 /* NotoSansCJKkr-Bold.otf */; };
 		59E971E625FB003B008A7EF9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E971D625FB003B008A7EF9 /* BaseViewController.swift */; };
-		59E971EC25FB0053008A7EF9 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E971EA25FB0052008A7EF9 /* SplashViewController.swift */; };
-		59E971ED25FB0053008A7EF9 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59E971EB25FB0052008A7EF9 /* SplashViewController.xib */; };
 		59E971F525FB0512008A7EF9 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E971F425FB0512008A7EF9 /* UIViewController.swift */; };
 		59E9720825FB0722008A7EF9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E9720625FB0722008A7EF9 /* LoginViewController.swift */; };
 		59E9720925FB0722008A7EF9 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59E9720725FB0722008A7EF9 /* LoginViewController.xib */; };
+		59E9720F25FB0EB6008A7EF9 /* WishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E9720D25FB0EB6008A7EF9 /* WishViewController.swift */; };
+		59E9721025FB0EB6008A7EF9 /* WishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59E9720E25FB0EB6008A7EF9 /* WishViewController.xib */; };
+		59E9721525FB1581008A7EF9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E9721325FB1581008A7EF9 /* MainViewController.swift */; };
+		59E9721625FB1581008A7EF9 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59E9721425FB1581008A7EF9 /* MainViewController.xib */; };
+		59E9721B25FB174D008A7EF9 /* NicknameSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E9721925FB174D008A7EF9 /* NicknameSettingViewController.swift */; };
+		59E9721C25FB174D008A7EF9 /* NicknameSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59E9721A25FB174D008A7EF9 /* NicknameSettingViewController.xib */; };
+		59E9722025FB1B4B008A7EF9 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E9721F25FB1B4B008A7EF9 /* ListViewController.swift */; };
 		F0E0C21CF00377B604A32779 /* Pods_TimeCapsule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2289D2F06BEABFE9B4FBB6 /* Pods_TimeCapsule.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,11 +65,16 @@
 		59E971D325FB003B008A7EF9 /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
 		59E971D425FB003B008A7EF9 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
 		59E971D625FB003B008A7EF9 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		59E971EA25FB0052008A7EF9 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
-		59E971EB25FB0052008A7EF9 /* SplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		59E971F425FB0512008A7EF9 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		59E9720625FB0722008A7EF9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		59E9720725FB0722008A7EF9 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		59E9720D25FB0EB6008A7EF9 /* WishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishViewController.swift; sourceTree = "<group>"; };
+		59E9720E25FB0EB6008A7EF9 /* WishViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WishViewController.xib; sourceTree = "<group>"; };
+		59E9721325FB1581008A7EF9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		59E9721425FB1581008A7EF9 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		59E9721925FB174D008A7EF9 /* NicknameSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameSettingViewController.swift; sourceTree = "<group>"; };
+		59E9721A25FB174D008A7EF9 /* NicknameSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NicknameSettingViewController.xib; sourceTree = "<group>"; };
+		59E9721F25FB1B4B008A7EF9 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		93F7264C0501EC697F9620A9 /* Pods-TimeCapsule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeCapsule.debug.xcconfig"; path = "Target Support Files/Pods-TimeCapsule/Pods-TimeCapsule.debug.xcconfig"; sourceTree = "<group>"; };
 		B49921E902CEC8BEA144F303 /* Pods-TimeCapsule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeCapsule.release.xcconfig"; path = "Target Support Files/Pods-TimeCapsule/Pods-TimeCapsule.release.xcconfig"; sourceTree = "<group>"; };
 		EF2289D2F06BEABFE9B4FBB6 /* Pods_TimeCapsule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeCapsule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				59E971C125FB003B008A7EF9 /* Configuration */,
-				59E971E925FB0052008A7EF9 /* Splash */,
 				59E971E825FB0047008A7EF9 /* Login */,
 				59E971F125FB0475008A7EF9 /* Wish */,
 				59E971F225FB0483008A7EF9 /* Main */,
@@ -195,24 +204,19 @@
 			children = (
 				59E9720625FB0722008A7EF9 /* LoginViewController.swift */,
 				59E9720725FB0722008A7EF9 /* LoginViewController.xib */,
+				59E9721925FB174D008A7EF9 /* NicknameSettingViewController.swift */,
+				59E9721A25FB174D008A7EF9 /* NicknameSettingViewController.xib */,
 				59E971FA25FB0598008A7EF9 /* Entity */,
 				59E971F925FB058E008A7EF9 /* DataManager */,
 			);
 			path = Login;
 			sourceTree = "<group>";
 		};
-		59E971E925FB0052008A7EF9 /* Splash */ = {
-			isa = PBXGroup;
-			children = (
-				59E971EA25FB0052008A7EF9 /* SplashViewController.swift */,
-				59E971EB25FB0052008A7EF9 /* SplashViewController.xib */,
-			);
-			path = Splash;
-			sourceTree = "<group>";
-		};
 		59E971F125FB0475008A7EF9 /* Wish */ = {
 			isa = PBXGroup;
 			children = (
+				59E9720D25FB0EB6008A7EF9 /* WishViewController.swift */,
+				59E9720E25FB0EB6008A7EF9 /* WishViewController.xib */,
 				59E971FC25FB05A7008A7EF9 /* Entity */,
 				59E971FB25FB05A1008A7EF9 /* DataManager */,
 			);
@@ -222,6 +226,8 @@
 		59E971F225FB0483008A7EF9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				59E9721325FB1581008A7EF9 /* MainViewController.swift */,
+				59E9721425FB1581008A7EF9 /* MainViewController.xib */,
 				59E971FE25FB05B3008A7EF9 /* Entity */,
 				59E971FD25FB05AE008A7EF9 /* DataManager */,
 			);
@@ -231,6 +237,7 @@
 		59E971F325FB0496008A7EF9 /* CapsuleOpening */ = {
 			isa = PBXGroup;
 			children = (
+				59E9721F25FB1B4B008A7EF9 /* ListViewController.swift */,
 				59E971B025FB0007008A7EF9 /* ViewController.swift */,
 				59E971B225FB0007008A7EF9 /* Main.storyboard */,
 				59E9720025FB05BF008A7EF9 /* Entity */,
@@ -362,12 +369,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59E9721C25FB174D008A7EF9 /* NicknameSettingViewController.xib in Resources */,
 				59E9720925FB0722008A7EF9 /* LoginViewController.xib in Resources */,
 				59E971E425FB003B008A7EF9 /* NotoSansCJKkr-Regular.otf in Resources */,
 				59E971B925FB000C008A7EF9 /* LaunchScreen.storyboard in Resources */,
 				59E971B625FB000C008A7EF9 /* Assets.xcassets in Resources */,
-				59E971ED25FB0053008A7EF9 /* SplashViewController.xib in Resources */,
 				59E971B425FB0007008A7EF9 /* Main.storyboard in Resources */,
+				59E9721025FB0EB6008A7EF9 /* WishViewController.xib in Resources */,
+				59E9721625FB1581008A7EF9 /* MainViewController.xib in Resources */,
 				59E971E325FB003B008A7EF9 /* NotoSansCJKkr-Medium.otf in Resources */,
 				59E971E525FB003B008A7EF9 /* NotoSansCJKkr-Bold.otf in Resources */,
 			);
@@ -423,11 +432,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				59E9720825FB0722008A7EF9 /* LoginViewController.swift in Sources */,
+				59E9721B25FB174D008A7EF9 /* NicknameSettingViewController.swift in Sources */,
 				59E971DB25FB003B008A7EF9 /* UIView.swift in Sources */,
 				59E971B125FB0007008A7EF9 /* ViewController.swift in Sources */,
 				59E971AD25FB0007008A7EF9 /* AppDelegate.swift in Sources */,
-				59E971EC25FB0053008A7EF9 /* SplashViewController.swift in Sources */,
 				59E971DF25FB003B008A7EF9 /* UINavigationBar.swift in Sources */,
+				59E9720F25FB0EB6008A7EF9 /* WishViewController.swift in Sources */,
 				59E971DC25FB003B008A7EF9 /* String.swift in Sources */,
 				59E971DA25FB003B008A7EF9 /* Date.swift in Sources */,
 				59E971DD25FB003B008A7EF9 /* UIButton.swift in Sources */,
@@ -436,10 +446,12 @@
 				59E971E125FB003B008A7EF9 /* Color.swift in Sources */,
 				59E971E025FB003B008A7EF9 /* UIFont.swift in Sources */,
 				59E971D925FB003B008A7EF9 /* Device.swift in Sources */,
+				59E9722025FB1B4B008A7EF9 /* ListViewController.swift in Sources */,
 				59E971D725FB003B008A7EF9 /* Constant.swift in Sources */,
 				59E971E625FB003B008A7EF9 /* BaseViewController.swift in Sources */,
 				59E971D825FB003B008A7EF9 /* IndicatorView.swift in Sources */,
 				59E971E225FB003B008A7EF9 /* KobisKey.swift in Sources */,
+				59E9721525FB1581008A7EF9 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  SplashViewController.swift
+//  WishViewController.swift
 //  TimeCapsule
 //
 //  Created by 정지현 on 2021/03/12.
@@ -7,19 +7,27 @@
 
 import UIKit
 
-class SplashViewController: UIViewController {
+class WishViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)
 
         // Do any additional setup after loading the view.
     }
 
     @IBAction func mainButtonTapped(_ sender: Any) {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ViewController") as! ViewController
-        self.present(vc, animated: true, completion: nil)
+        guard let pvc = self.presentingViewController else { return }
+        let nextVC = MainViewController()
+        nextVC.modalPresentationStyle = .overCurrentContext
+        self.dismiss(animated: true) {
+            pvc.present(nextVC, animated: true, completion: nil)
+        }
     }
+    
+    @IBAction func cancelButtonTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
     /*
     // MARK: - Navigation

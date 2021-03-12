@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2516E83A25FB7C7A00ADD135 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2516E83825FB7C7A00ADD135 /* MyPageViewController.swift */; };
+		2516E83B25FB7C7A00ADD135 /* MyPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2516E83925FB7C7A00ADD135 /* MyPageViewController.xib */; };
+		2516E83F25FB855200ADD135 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2516E83E25FB855200ADD135 /* GameScene.swift */; };
+		2516E84225FB890E00ADD135 /* URLType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2516E84125FB890E00ADD135 /* URLType.swift */; };
+		2516E84525FB8A9400ADD135 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2516E84425FB8A9400ADD135 /* NetworkService.swift */; };
 		252076EE25FB3A8D004366E4 /* AddWishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252076EC25FB3A8D004366E4 /* AddWishViewController.swift */; };
 		252076EF25FB3A8D004366E4 /* AddWishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 252076ED25FB3A8D004366E4 /* AddWishViewController.xib */; };
 		252076F925FB44E0004366E4 /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252076F725FB44E0004366E4 /* TagCollectionViewCell.swift */; };
@@ -52,6 +57,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2516E83825FB7C7A00ADD135 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyPageViewController.swift; path = TimeCapsule/Wish/Nickname/MyPageViewController.swift; sourceTree = SOURCE_ROOT; };
+		2516E83925FB7C7A00ADD135 /* MyPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MyPageViewController.xib; path = TimeCapsule/Wish/Nickname/MyPageViewController.xib; sourceTree = SOURCE_ROOT; };
+		2516E83E25FB855200ADD135 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		2516E84125FB890E00ADD135 /* URLType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLType.swift; sourceTree = "<group>"; };
+		2516E84425FB8A9400ADD135 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		252076EC25FB3A8D004366E4 /* AddWishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWishViewController.swift; sourceTree = "<group>"; };
 		252076ED25FB3A8D004366E4 /* AddWishViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddWishViewController.xib; sourceTree = "<group>"; };
 		252076F725FB44E0004366E4 /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -119,6 +129,15 @@
 				B49921E902CEC8BEA144F303 /* Pods-TimeCapsule.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		2516E83725FB7C6800ADD135 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				2516E83825FB7C7A00ADD135 /* MyPageViewController.swift */,
+				2516E83925FB7C7A00ADD135 /* MyPageViewController.xib */,
+			);
+			path = MyPage;
 			sourceTree = "<group>";
 		};
 		252076F625FB44CC004366E4 /* Cell */ = {
@@ -202,6 +221,8 @@
 				59E971CF25FB003B008A7EF9 /* Secret */,
 				59E971D125FB003B008A7EF9 /* Font */,
 				59E971D525FB003B008A7EF9 /* Base */,
+				2516E84125FB890E00ADD135 /* URLType.swift */,
+				2516E84425FB8A9400ADD135 /* NetworkService.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -272,6 +293,7 @@
 		59E971F125FB0475008A7EF9 /* Wish */ = {
 			isa = PBXGroup;
 			children = (
+				2516E83725FB7C6800ADD135 /* MyPage */,
 				2520770625FB5DEF004366E4 /* Nickname */,
 				252076FE25FB51F1004366E4 /* Capsule */,
 				252076FF25FB5203004366E4 /* AddWish */,
@@ -286,6 +308,7 @@
 		59E971F225FB0483008A7EF9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				2516E83E25FB855200ADD135 /* GameScene.swift */,
 				59E9721325FB1581008A7EF9 /* MainViewController.swift */,
 				59E9721425FB1581008A7EF9 /* MainViewController.xib */,
 				59E971FE25FB05B3008A7EF9 /* Entity */,
@@ -436,6 +459,7 @@
 				2520770325FB5235004366E4 /* CapsuleNameViewController.xib in Resources */,
 				59E971E425FB003B008A7EF9 /* NotoSansCJKkr-Regular.otf in Resources */,
 				2520770B25FB5E55004366E4 /* NicknameViewController.xib in Resources */,
+				2516E83B25FB7C7A00ADD135 /* MyPageViewController.xib in Resources */,
 				59E971B925FB000C008A7EF9 /* LaunchScreen.storyboard in Resources */,
 				59E971B625FB000C008A7EF9 /* Assets.xcassets in Resources */,
 				59E971B425FB0007008A7EF9 /* Main.storyboard in Resources */,
@@ -500,6 +524,7 @@
 				59E9720825FB0722008A7EF9 /* LoginViewController.swift in Sources */,
 				59E9722F25FB4377008A7EF9 /* UserDataManager.swift in Sources */,
 				59E9721B25FB174D008A7EF9 /* NicknameSettingViewController.swift in Sources */,
+				2516E83F25FB855200ADD135 /* GameScene.swift in Sources */,
 				59E971DB25FB003B008A7EF9 /* UIView.swift in Sources */,
 				252076EE25FB3A8D004366E4 /* AddWishViewController.swift in Sources */,
 				59E971B125FB0007008A7EF9 /* ViewController.swift in Sources */,
@@ -520,8 +545,11 @@
 				59E9722025FB1B4B008A7EF9 /* ListViewController.swift in Sources */,
 				59E971D725FB003B008A7EF9 /* Constant.swift in Sources */,
 				59E971E625FB003B008A7EF9 /* BaseViewController.swift in Sources */,
+				2516E83A25FB7C7A00ADD135 /* MyPageViewController.swift in Sources */,
+				2516E84225FB890E00ADD135 /* URLType.swift in Sources */,
 				59E971D825FB003B008A7EF9 /* IndicatorView.swift in Sources */,
 				59E971E225FB003B008A7EF9 /* KobisKey.swift in Sources */,
+				2516E84525FB8A9400ADD135 /* NetworkService.swift in Sources */,
 				2520770225FB5235004366E4 /* CapsuleNameViewController.swift in Sources */,
 				59E9721525FB1581008A7EF9 /* MainViewController.swift in Sources */,
 			);
@@ -672,7 +700,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9S4MGTSS3Y;
+				DEVELOPMENT_TEAM = 96CBZB9K9M;
 				INFOPLIST_FILE = TimeCapsule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -692,7 +720,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9S4MGTSS3Y;
+				DEVELOPMENT_TEAM = 96CBZB9K9M;
 				INFOPLIST_FILE = TimeCapsule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

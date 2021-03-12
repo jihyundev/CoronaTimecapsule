@@ -6,13 +6,26 @@
 //
 
 import UIKit
+import SpriteKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var backImageView: UIImageView!
+    @IBOutlet weak var gameView: UIView!
+    lazy var rocketImageView: UIImageView = {
+       let view = UIImageView(image: UIImage(named: "rocket"))
+        view.frame.size.width = 300
+        view.frame.size.height = 745
+        view.contentMode = .scaleToFill
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
-        // Do any additional setup after loading the view.
+        makeGameScene()
+        backImageView.contentMode = .scaleAspectFill
+        prepareRocket()
     }
     
     @IBAction func listButtonTapped(_ sender: Any) {
@@ -23,5 +36,19 @@ class MainViewController: UIViewController {
     @IBAction func myPageButtonTapped(_ sender: Any) {
     }
     
-
+    func prepareRocket() {
+        view.addSubview(rocketImageView)
+        rocketImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        rocketImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 30).isActive = true
+        print(rocketImageView.frame.size)
+    }
+    func makeGameScene() {
+        let scene = GameScene(size: self.gameView.bounds.size)
+        let skView = self.gameView as! SKView
+        scene.backgroundColor = .clear
+        skView.ignoresSiblingOrder = true
+        scene.scaleMode = .aspectFit
+        skView.presentScene(scene)
+    }
+    
 }

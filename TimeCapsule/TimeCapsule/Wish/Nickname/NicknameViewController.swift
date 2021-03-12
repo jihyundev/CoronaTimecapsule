@@ -38,6 +38,7 @@ class NicknameViewController: UIViewController {
         nameTextView.layer.cornerRadius = 9
         nameTextView.backgroundColor = UIColor.mainGrey
     }
+    
 
 
 }

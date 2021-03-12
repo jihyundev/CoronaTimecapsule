@@ -16,17 +16,19 @@ class GameScene: SKScene {
     }
     
     var index: Int = 0
+    var currentItemCount: Int = 0
     let manager = CMMotionManager()
     let bodySize: CGFloat = 15
     lazy var x: CGFloat = (-bodySize * 2)
     lazy var y: CGFloat = bodySize * 2
     
     override func didMove(to view: SKView) {
-//        physicsWorld.contactDelegate = self
-        
-        for i in 0..<21 {
-            createTile(count: i, index: index)
+        if currentItemCount>0 {
+            for i in 0..<currentItemCount {
+                createTile(count: i, index: index)
+            }
         }
+        
         createWall()
         print(self.size.width)
         manager.startAccelerometerUpdates()
@@ -154,44 +156,3 @@ class GameScene: SKScene {
     
 
 }
-
-//
-//extension GameScene: SKPhysicsContactDelegate {
-//    func didBegin(_ contact: SKPhysicsContact) {
-//        var firstBody: SKPhysicsBody
-//        var secondBody: SKPhysicsBody
-//        if contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask {
-//          firstBody = contact.bodyA
-//          secondBody = contact.bodyB
-//        } else {
-//          firstBody = contact.bodyB
-//          secondBody = contact.bodyA
-//        }
-//
-//        // 2
-//        if ((firstBody.categoryBitMask & PhysicsCategory.wall != 0) &&
-//          (secondBody.categoryBitMask & PhysicsCategory.tile != 0)) {
-//            print(#function)
-//            if let wall = firstBody.node as? SKSpriteNode,
-//              let tile = secondBody.node as? SKSpriteNode {
-//                let generator = UIImpactFeedbackGenerator(style: .heavy)
-//                generator.impactOccurred()
-//                print("시작", arc4random())
-////                tile.physicsBody?.categoryBitMask = PhysicsCategory.wall
-//            }
-//
-//
-//        }
-//    }
-//    func didEnd(_ contact: SKPhysicsContact) {
-//
-//        var firstBody: SKPhysicsBody
-//        firstBody = contact.bodyA
-//        if let tile = firstBody.node as? SKSpriteNode {
-////        tile.physicsBody?.categoryBitMask = PhysicsCategory.tile
-//            print("끝", arc4random())
-//        }
-//    }
-
-//}
-

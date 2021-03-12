@@ -44,12 +44,8 @@
 		59E971F525FB0512008A7EF9 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E971F425FB0512008A7EF9 /* UIViewController.swift */; };
 		59E9720825FB0722008A7EF9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E9720625FB0722008A7EF9 /* LoginViewController.swift */; };
 		59E9720925FB0722008A7EF9 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59E9720725FB0722008A7EF9 /* LoginViewController.xib */; };
-		59E9720F25FB0EB6008A7EF9 /* WishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E9720D25FB0EB6008A7EF9 /* WishViewController.swift */; };
-		59E9721025FB0EB6008A7EF9 /* WishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59E9720E25FB0EB6008A7EF9 /* WishViewController.xib */; };
 		59E9721525FB1581008A7EF9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E9721325FB1581008A7EF9 /* MainViewController.swift */; };
 		59E9721625FB1581008A7EF9 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59E9721425FB1581008A7EF9 /* MainViewController.xib */; };
-		59E9721B25FB174D008A7EF9 /* NicknameSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E9721925FB174D008A7EF9 /* NicknameSettingViewController.swift */; };
-		59E9721C25FB174D008A7EF9 /* NicknameSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59E9721A25FB174D008A7EF9 /* NicknameSettingViewController.xib */; };
 		59E9722025FB1B4B008A7EF9 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E9721F25FB1B4B008A7EF9 /* ListViewController.swift */; };
 		59E9722F25FB4377008A7EF9 /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E9722E25FB4377008A7EF9 /* UserDataManager.swift */; };
 		59E9723425FB4CE6008A7EF9 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E9723325FB4CE6008A7EF9 /* UserModel.swift */; };
@@ -96,12 +92,8 @@
 		59E971F425FB0512008A7EF9 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		59E9720625FB0722008A7EF9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		59E9720725FB0722008A7EF9 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		59E9720D25FB0EB6008A7EF9 /* WishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishViewController.swift; sourceTree = "<group>"; };
-		59E9720E25FB0EB6008A7EF9 /* WishViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WishViewController.xib; sourceTree = "<group>"; };
 		59E9721325FB1581008A7EF9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		59E9721425FB1581008A7EF9 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		59E9721925FB174D008A7EF9 /* NicknameSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameSettingViewController.swift; sourceTree = "<group>"; };
-		59E9721A25FB174D008A7EF9 /* NicknameSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NicknameSettingViewController.xib; sourceTree = "<group>"; };
 		59E9721F25FB1B4B008A7EF9 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		59E9722E25FB4377008A7EF9 /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
 		59E9723325FB4CE6008A7EF9 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
@@ -282,8 +274,6 @@
 			children = (
 				59E9720625FB0722008A7EF9 /* LoginViewController.swift */,
 				59E9720725FB0722008A7EF9 /* LoginViewController.xib */,
-				59E9721925FB174D008A7EF9 /* NicknameSettingViewController.swift */,
-				59E9721A25FB174D008A7EF9 /* NicknameSettingViewController.xib */,
 				59E971FA25FB0598008A7EF9 /* Entity */,
 				59E971F925FB058E008A7EF9 /* DataManager */,
 			);
@@ -297,8 +287,6 @@
 				2520770625FB5DEF004366E4 /* Nickname */,
 				252076FE25FB51F1004366E4 /* Capsule */,
 				252076FF25FB5203004366E4 /* AddWish */,
-				59E9720D25FB0EB6008A7EF9 /* WishViewController.swift */,
-				59E9720E25FB0EB6008A7EF9 /* WishViewController.xib */,
 				59E971FC25FB05A7008A7EF9 /* Entity */,
 				59E971FB25FB05A1008A7EF9 /* DataManager */,
 			);
@@ -454,7 +442,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59E9721C25FB174D008A7EF9 /* NicknameSettingViewController.xib in Resources */,
 				59E9720925FB0722008A7EF9 /* LoginViewController.xib in Resources */,
 				2520770325FB5235004366E4 /* CapsuleNameViewController.xib in Resources */,
 				59E971E425FB003B008A7EF9 /* NotoSansCJKkr-Regular.otf in Resources */,
@@ -464,7 +451,6 @@
 				59E971B625FB000C008A7EF9 /* Assets.xcassets in Resources */,
 				59E971B425FB0007008A7EF9 /* Main.storyboard in Resources */,
 				252076EF25FB3A8D004366E4 /* AddWishViewController.xib in Resources */,
-				59E9721025FB0EB6008A7EF9 /* WishViewController.xib in Resources */,
 				59E9721625FB1581008A7EF9 /* MainViewController.xib in Resources */,
 				252076FA25FB44E0004366E4 /* TagCollectionViewCell.xib in Resources */,
 				59E971E325FB003B008A7EF9 /* NotoSansCJKkr-Medium.otf in Resources */,
@@ -523,7 +509,6 @@
 			files = (
 				59E9720825FB0722008A7EF9 /* LoginViewController.swift in Sources */,
 				59E9722F25FB4377008A7EF9 /* UserDataManager.swift in Sources */,
-				59E9721B25FB174D008A7EF9 /* NicknameSettingViewController.swift in Sources */,
 				2516E83F25FB855200ADD135 /* GameScene.swift in Sources */,
 				59E971DB25FB003B008A7EF9 /* UIView.swift in Sources */,
 				252076EE25FB3A8D004366E4 /* AddWishViewController.swift in Sources */,
@@ -531,7 +516,6 @@
 				59E971AD25FB0007008A7EF9 /* AppDelegate.swift in Sources */,
 				252076F925FB44E0004366E4 /* TagCollectionViewCell.swift in Sources */,
 				59E971DF25FB003B008A7EF9 /* UINavigationBar.swift in Sources */,
-				59E9720F25FB0EB6008A7EF9 /* WishViewController.swift in Sources */,
 				59E9723425FB4CE6008A7EF9 /* UserModel.swift in Sources */,
 				59E971DC25FB003B008A7EF9 /* String.swift in Sources */,
 				59E971DA25FB003B008A7EF9 /* Date.swift in Sources */,

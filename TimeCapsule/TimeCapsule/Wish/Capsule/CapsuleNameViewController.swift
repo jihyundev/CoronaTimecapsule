@@ -26,6 +26,14 @@ class CapsuleNameViewController: UIViewController {
         setupUI()
     }
     
+    @IBAction func exitButtonTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    @IBAction func completionButtonTapped(_ sender: Any) {
+        //닉네임 변경하기
+        
+        self.dismiss(animated: true, completion: nil)
+    }
     func setupUI() {
         containerView.layer.cornerRadius = 30
         containerView.borderWidth = 5

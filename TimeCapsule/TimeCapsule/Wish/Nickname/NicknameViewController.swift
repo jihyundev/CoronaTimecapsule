@@ -24,6 +24,14 @@ class NicknameViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
     }
+    @IBAction func completionButtonTapped(_ sender: Any) {
+        guard let pvc = self.presentingViewController else { return }
+        let nextVC = MainViewController()
+        nextVC.modalPresentationStyle = .overCurrentContext
+        self.dismiss(animated: true) {
+            pvc.present(nextVC, animated: true, completion: nil)
+        }
+    }
     
     func setupUI() {
         containerView.layer.cornerRadius = 30

@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		250523E125FC287600A4E929 /* AddMarble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250523E025FC287600A4E929 /* AddMarble.swift */; };
+		2505243225FC36B300A4E929 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2505242225FC36B300A4E929 /* ListViewController.swift */; };
+		2505243325FC36B300A4E929 /* FocusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2505242325FC36B300A4E929 /* FocusView.xib */; };
+		2505243425FC36B300A4E929 /* FinishedListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2505242525FC36B300A4E929 /* FinishedListCell.xib */; };
+		2505243525FC36B300A4E929 /* FinishedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2505242625FC36B300A4E929 /* FinishedListViewController.swift */; };
+		2505243625FC36B300A4E929 /* FinishedListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2505242725FC36B300A4E929 /* FinishedListCell.swift */; };
+		2505243725FC36B300A4E929 /* FinishedListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2505242825FC36B300A4E929 /* FinishedListViewController.xib */; };
+		2505243825FC36B300A4E929 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2505242925FC36B300A4E929 /* Main.storyboard */; };
+		2505243925FC36B300A4E929 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2505242B25FC36B300A4E929 /* MenuCell.swift */; };
+		2505243A25FC36B300A4E929 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2505242C25FC36B300A4E929 /* MenuCell.xib */; };
+		2505243B25FC36B300A4E929 /* WishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2505242E25FC36B300A4E929 /* WishlistViewController.swift */; };
+		2505243C25FC36B300A4E929 /* WishlistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2505242F25FC36B300A4E929 /* WishlistViewController.xib */; };
+		2505243D25FC36B300A4E929 /* WishlistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2505243025FC36B300A4E929 /* WishlistCell.xib */; };
+		2505243E25FC36B300A4E929 /* WishlistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2505243125FC36B300A4E929 /* WishlistCell.swift */; };
 		2516E83A25FB7C7A00ADD135 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2516E83825FB7C7A00ADD135 /* MyPageViewController.swift */; };
 		2516E83B25FB7C7A00ADD135 /* MyPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2516E83925FB7C7A00ADD135 /* MyPageViewController.xib */; };
 		2516E83F25FB855200ADD135 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2516E83E25FB855200ADD135 /* GameScene.swift */; };
@@ -27,8 +40,6 @@
 		256EF96B25FC1E40003391DD /* Marbles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256EF96A25FC1E40003391DD /* Marbles.swift */; };
 		59E971AD25FB0007008A7EF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E971AC25FB0007008A7EF9 /* AppDelegate.swift */; };
 		59E971AF25FB0007008A7EF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E971AE25FB0007008A7EF9 /* SceneDelegate.swift */; };
-		59E971B125FB0007008A7EF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E971B025FB0007008A7EF9 /* ViewController.swift */; };
-		59E971B425FB0007008A7EF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59E971B225FB0007008A7EF9 /* Main.storyboard */; };
 		59E971B625FB000C008A7EF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59E971B525FB000C008A7EF9 /* Assets.xcassets */; };
 		59E971B925FB000C008A7EF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59E971B725FB000C008A7EF9 /* LaunchScreen.storyboard */; };
 		59E971D725FB003B008A7EF9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E971C225FB003B008A7EF9 /* Constant.swift */; };
@@ -51,7 +62,6 @@
 		59E9720925FB0722008A7EF9 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59E9720725FB0722008A7EF9 /* LoginViewController.xib */; };
 		59E9721525FB1581008A7EF9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E9721325FB1581008A7EF9 /* MainViewController.swift */; };
 		59E9721625FB1581008A7EF9 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59E9721425FB1581008A7EF9 /* MainViewController.xib */; };
-		59E9722025FB1B4B008A7EF9 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E9721F25FB1B4B008A7EF9 /* ListViewController.swift */; };
 		59E9722F25FB4377008A7EF9 /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E9722E25FB4377008A7EF9 /* UserDataManager.swift */; };
 		59E9723425FB4CE6008A7EF9 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E9723325FB4CE6008A7EF9 /* UserModel.swift */; };
 		F0E0C21CF00377B604A32779 /* Pods_TimeCapsule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2289D2F06BEABFE9B4FBB6 /* Pods_TimeCapsule.framework */; };
@@ -59,6 +69,27 @@
 
 /* Begin PBXFileReference section */
 		250523E025FC287600A4E929 /* AddMarble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddMarble.swift; path = TimeCapsule/Main/EndPopUp/AddMarble.swift; sourceTree = SOURCE_ROOT; };
+		250523EC25FC363400A4E929 /* Spoqa Han Sans Neo Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Neo Medium.otf"; sourceTree = "<group>"; };
+		250523ED25FC363400A4E929 /* Gaegu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaegu-Regular.ttf"; sourceTree = "<group>"; };
+		250523EE25FC363400A4E929 /* Spoqa Han Sans Neo Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Neo Light.otf"; sourceTree = "<group>"; };
+		250523EF25FC363400A4E929 /* Spoqa Han Sans Neo Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Neo Regular.otf"; sourceTree = "<group>"; };
+		250523F025FC363400A4E929 /* Gaegu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaegu-Light.ttf"; sourceTree = "<group>"; };
+		250523F125FC363500A4E929 /* Gaegu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaegu-Bold.ttf"; sourceTree = "<group>"; };
+		250523F225FC363500A4E929 /* Spoqa Han Sans Neo Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Neo Bold.otf"; sourceTree = "<group>"; };
+		250523F325FC363500A4E929 /* Spoqa Han Sans Neo Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Neo Thin.otf"; sourceTree = "<group>"; };
+		2505242225FC36B300A4E929 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		2505242325FC36B300A4E929 /* FocusView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FocusView.xib; sourceTree = "<group>"; };
+		2505242525FC36B300A4E929 /* FinishedListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinishedListCell.xib; sourceTree = "<group>"; };
+		2505242625FC36B300A4E929 /* FinishedListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishedListViewController.swift; sourceTree = "<group>"; };
+		2505242725FC36B300A4E929 /* FinishedListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishedListCell.swift; sourceTree = "<group>"; };
+		2505242825FC36B300A4E929 /* FinishedListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinishedListViewController.xib; sourceTree = "<group>"; };
+		2505242A25FC36B300A4E929 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2505242B25FC36B300A4E929 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		2505242C25FC36B300A4E929 /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		2505242E25FC36B300A4E929 /* WishlistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishlistViewController.swift; sourceTree = "<group>"; };
+		2505242F25FC36B300A4E929 /* WishlistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WishlistViewController.xib; sourceTree = "<group>"; };
+		2505243025FC36B300A4E929 /* WishlistCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WishlistCell.xib; sourceTree = "<group>"; };
+		2505243125FC36B300A4E929 /* WishlistCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishlistCell.swift; sourceTree = "<group>"; };
 		2516E83825FB7C7A00ADD135 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyPageViewController.swift; path = TimeCapsule/Wish/Nickname/MyPageViewController.swift; sourceTree = SOURCE_ROOT; };
 		2516E83925FB7C7A00ADD135 /* MyPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MyPageViewController.xib; path = TimeCapsule/Wish/Nickname/MyPageViewController.xib; sourceTree = SOURCE_ROOT; };
 		2516E83E25FB855200ADD135 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -79,8 +110,6 @@
 		59E971A925FB0007008A7EF9 /* TimeCapsule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeCapsule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E971AC25FB0007008A7EF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59E971AE25FB0007008A7EF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		59E971B025FB0007008A7EF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		59E971B325FB0007008A7EF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59E971B525FB000C008A7EF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59E971B825FB000C008A7EF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59E971BA25FB000C008A7EF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,7 +133,6 @@
 		59E9720725FB0722008A7EF9 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		59E9721325FB1581008A7EF9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		59E9721425FB1581008A7EF9 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		59E9721F25FB1B4B008A7EF9 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		59E9722E25FB4377008A7EF9 /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
 		59E9723325FB4CE6008A7EF9 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		93F7264C0501EC697F9620A9 /* Pods-TimeCapsule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeCapsule.debug.xcconfig"; path = "Target Support Files/Pods-TimeCapsule/Pods-TimeCapsule.debug.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +159,43 @@
 				B49921E902CEC8BEA144F303 /* Pods-TimeCapsule.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		2505242125FC36B300A4E929 /* CapsuleOpening */ = {
+			isa = PBXGroup;
+			children = (
+				2505242D25FC36B300A4E929 /* WishList */,
+				2505242425FC36B300A4E929 /* Finished */,
+				2505242225FC36B300A4E929 /* ListViewController.swift */,
+				2505242325FC36B300A4E929 /* FocusView.xib */,
+				2505242925FC36B300A4E929 /* Main.storyboard */,
+				2505242B25FC36B300A4E929 /* MenuCell.swift */,
+				2505242C25FC36B300A4E929 /* MenuCell.xib */,
+			);
+			name = CapsuleOpening;
+			path = "../../../../Downloads/CoronaTimecapsule-main-2/TimeCapsule/TimeCapsule/CapsuleOpening";
+			sourceTree = "<group>";
+		};
+		2505242425FC36B300A4E929 /* Finished */ = {
+			isa = PBXGroup;
+			children = (
+				2505242525FC36B300A4E929 /* FinishedListCell.xib */,
+				2505242625FC36B300A4E929 /* FinishedListViewController.swift */,
+				2505242725FC36B300A4E929 /* FinishedListCell.swift */,
+				2505242825FC36B300A4E929 /* FinishedListViewController.xib */,
+			);
+			path = Finished;
+			sourceTree = "<group>";
+		};
+		2505242D25FC36B300A4E929 /* WishList */ = {
+			isa = PBXGroup;
+			children = (
+				2505242E25FC36B300A4E929 /* WishlistViewController.swift */,
+				2505242F25FC36B300A4E929 /* WishlistViewController.xib */,
+				2505243025FC36B300A4E929 /* WishlistCell.xib */,
+				2505243125FC36B300A4E929 /* WishlistCell.swift */,
+			);
+			path = WishList;
 			sourceTree = "<group>";
 		};
 		2516E83725FB7C6800ADD135 /* MyPage */ = {
@@ -223,7 +288,7 @@
 				59E971E825FB0047008A7EF9 /* Login */,
 				59E971F125FB0475008A7EF9 /* Wish */,
 				59E971F225FB0483008A7EF9 /* Main */,
-				59E971F325FB0496008A7EF9 /* CapsuleOpening */,
+				2505242125FC36B300A4E929 /* CapsuleOpening */,
 				59E971AC25FB0007008A7EF9 /* AppDelegate.swift */,
 				59E971AE25FB0007008A7EF9 /* SceneDelegate.swift */,
 				59E971B525FB000C008A7EF9 /* Assets.xcassets */,
@@ -283,6 +348,14 @@
 		59E971D125FB003B008A7EF9 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				250523F125FC363500A4E929 /* Gaegu-Bold.ttf */,
+				250523F025FC363400A4E929 /* Gaegu-Light.ttf */,
+				250523ED25FC363400A4E929 /* Gaegu-Regular.ttf */,
+				250523F225FC363500A4E929 /* Spoqa Han Sans Neo Bold.otf */,
+				250523EE25FC363400A4E929 /* Spoqa Han Sans Neo Light.otf */,
+				250523EC25FC363400A4E929 /* Spoqa Han Sans Neo Medium.otf */,
+				250523EF25FC363400A4E929 /* Spoqa Han Sans Neo Regular.otf */,
+				250523F325FC363500A4E929 /* Spoqa Han Sans Neo Thin.otf */,
 				59E971D225FB003B008A7EF9 /* NotoSansCJKkr-Medium.otf */,
 				59E971D325FB003B008A7EF9 /* NotoSansCJKkr-Regular.otf */,
 				59E971D425FB003B008A7EF9 /* NotoSansCJKkr-Bold.otf */,
@@ -333,18 +406,6 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		59E971F325FB0496008A7EF9 /* CapsuleOpening */ = {
-			isa = PBXGroup;
-			children = (
-				59E9721F25FB1B4B008A7EF9 /* ListViewController.swift */,
-				59E971B025FB0007008A7EF9 /* ViewController.swift */,
-				59E971B225FB0007008A7EF9 /* Main.storyboard */,
-				59E9720025FB05BF008A7EF9 /* Entity */,
-				59E971FF25FB05BA008A7EF9 /* DataManager */,
-			);
-			path = CapsuleOpening;
-			sourceTree = "<group>";
-		};
 		59E971F925FB058E008A7EF9 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,20 +449,6 @@
 			children = (
 				256EF96725FC1D67003391DD /* CapsuleInfo.swift */,
 				256EF96A25FC1E40003391DD /* Marbles.swift */,
-			);
-			path = Entity;
-			sourceTree = "<group>";
-		};
-		59E971FF25FB05BA008A7EF9 /* DataManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DataManager;
-			sourceTree = "<group>";
-		};
-		59E9720025FB05BF008A7EF9 /* Entity */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -477,12 +524,18 @@
 				2520770325FB5235004366E4 /* CapsuleNameViewController.xib in Resources */,
 				59E971E425FB003B008A7EF9 /* NotoSansCJKkr-Regular.otf in Resources */,
 				2520770B25FB5E55004366E4 /* NicknameViewController.xib in Resources */,
+				2505243725FC36B300A4E929 /* FinishedListViewController.xib in Resources */,
 				2516E83B25FB7C7A00ADD135 /* MyPageViewController.xib in Resources */,
+				2505243825FC36B300A4E929 /* Main.storyboard in Resources */,
 				59E971B925FB000C008A7EF9 /* LaunchScreen.storyboard in Resources */,
+				2505243D25FC36B300A4E929 /* WishlistCell.xib in Resources */,
 				59E971B625FB000C008A7EF9 /* Assets.xcassets in Resources */,
-				59E971B425FB0007008A7EF9 /* Main.storyboard in Resources */,
+				2505243325FC36B300A4E929 /* FocusView.xib in Resources */,
+				2505243425FC36B300A4E929 /* FinishedListCell.xib in Resources */,
 				252076EF25FB3A8D004366E4 /* AddWishViewController.xib in Resources */,
+				2505243A25FC36B300A4E929 /* MenuCell.xib in Resources */,
 				59E9721625FB1581008A7EF9 /* MainViewController.xib in Resources */,
+				2505243C25FC36B300A4E929 /* WishlistViewController.xib in Resources */,
 				252076FA25FB44E0004366E4 /* TagCollectionViewCell.xib in Resources */,
 				59E971E325FB003B008A7EF9 /* NotoSansCJKkr-Medium.otf in Resources */,
 				59E971E525FB003B008A7EF9 /* NotoSansCJKkr-Bold.otf in Resources */,
@@ -544,24 +597,28 @@
 				2516E83F25FB855200ADD135 /* GameScene.swift in Sources */,
 				59E971DB25FB003B008A7EF9 /* UIView.swift in Sources */,
 				252076EE25FB3A8D004366E4 /* AddWishViewController.swift in Sources */,
-				59E971B125FB0007008A7EF9 /* ViewController.swift in Sources */,
 				59E971AD25FB0007008A7EF9 /* AppDelegate.swift in Sources */,
 				256EF96325FC1B5B003391DD /* EndPopUpViewController.swift in Sources */,
 				252076F925FB44E0004366E4 /* TagCollectionViewCell.swift in Sources */,
 				59E971DF25FB003B008A7EF9 /* UINavigationBar.swift in Sources */,
+				2505243525FC36B300A4E929 /* FinishedListViewController.swift in Sources */,
 				59E9723425FB4CE6008A7EF9 /* UserModel.swift in Sources */,
 				59E971DC25FB003B008A7EF9 /* String.swift in Sources */,
 				59E971DA25FB003B008A7EF9 /* Date.swift in Sources */,
+				2505243B25FC36B300A4E929 /* WishlistViewController.swift in Sources */,
 				2520770A25FB5E55004366E4 /* NicknameViewController.swift in Sources */,
 				256EF96B25FC1E40003391DD /* Marbles.swift in Sources */,
+				2505243E25FC36B300A4E929 /* WishlistCell.swift in Sources */,
+				2505243225FC36B300A4E929 /* ListViewController.swift in Sources */,
 				59E971DD25FB003B008A7EF9 /* UIButton.swift in Sources */,
+				2505243625FC36B300A4E929 /* FinishedListCell.swift in Sources */,
 				59E971F525FB0512008A7EF9 /* UIViewController.swift in Sources */,
 				59E971AF25FB0007008A7EF9 /* SceneDelegate.swift in Sources */,
 				59E971E125FB003B008A7EF9 /* Color.swift in Sources */,
+				2505243925FC36B300A4E929 /* MenuCell.swift in Sources */,
 				59E971E025FB003B008A7EF9 /* UIFont.swift in Sources */,
 				256EF96825FC1D67003391DD /* CapsuleInfo.swift in Sources */,
 				59E971D925FB003B008A7EF9 /* Device.swift in Sources */,
-				59E9722025FB1B4B008A7EF9 /* ListViewController.swift in Sources */,
 				59E971D725FB003B008A7EF9 /* Constant.swift in Sources */,
 				59E971E625FB003B008A7EF9 /* BaseViewController.swift in Sources */,
 				250523E125FC287600A4E929 /* AddMarble.swift in Sources */,
@@ -578,10 +635,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		59E971B225FB0007008A7EF9 /* Main.storyboard */ = {
+		2505242925FC36B300A4E929 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				59E971B325FB0007008A7EF9 /* Base */,
+				2505242A25FC36B300A4E929 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

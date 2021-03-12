@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AddWishViewController: UIViewController {
+class AddWishViewController: UIViewController{
     
     @IBOutlet weak var textCount: UILabel!
     @IBOutlet weak var closeButton: UIButton!
@@ -19,6 +19,7 @@ class AddWishViewController: UIViewController {
     @IBOutlet weak var tagBaseCircleView: UIView!
     @IBOutlet weak var tagBaseView: UIView!
     
+    
     var tagID: Int = 0
     lazy var tagView = UIView(frame: CGRect(x: tagButton.frame.origin.x, y: tagButton.frame.origin.y, width: 61, height: 128))
     
@@ -26,6 +27,7 @@ class AddWishViewController: UIViewController {
         super.viewDidLoad()
         wishTextView.delegate = self
         setupUI()
+        
     }
     
     @IBAction func tagButtonTapped(_ sender: Any) {
@@ -34,12 +36,15 @@ class AddWishViewController: UIViewController {
     
     @IBAction func completionButtonTapped(_ sender: Any) {
         
+        //서버로 데이터 전송
+        
+        //dismiss
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func exitButtonTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
-    
-    
     
     func setupUI() {
         containerView.layer.cornerRadius = 30
@@ -61,9 +66,12 @@ class AddWishViewController: UIViewController {
         tagBaseCircleView.layer.cornerRadius = 9
         tagBaseCircleView.borderWidth = 3
         tagBaseCircleView.borderColor = .black
+        
+     
 
     }
     
+
     func showTagCollection() {
         
         self.containerView.addSubview(tagView)

@@ -12,7 +12,6 @@
             <connections>
                 <outlet property="completionButton" destination="1vG-KB-wO4" id="5QH-JT-C9b"/>
                 <outlet property="containerView" destination="cM7-IN-Jfa" id="U5M-No-hwE"/>
-                <outlet property="exitButton" destination="ciD-MC-idY" id="7ff-kP-HZh"/>
                 <outlet property="nameTextView" destination="zHH-Jd-86Q" id="Frm-8l-awu"/>
                 <outlet property="textCountLabel" destination="A3M-g6-pIo" id="KJy-c3-d9w"/>
                 <outlet property="titleLabel" destination="8Z6-N5-Vxf" id="8lB-T6-b74"/>
@@ -20,7 +19,7 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -33,10 +32,6 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciD-MC-idY">
-                            <rect key="frame" x="256" y="26" width="30" height="30"/>
-                            <state key="normal" title="x"/>
-                        </button>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zHH-Jd-86Q">
                             <rect key="frame" x="22" y="71" width="268" height="41"/>
                             <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -54,6 +49,9 @@
                                 <constraint firstAttribute="width" constant="268" id="dp9-iW-oHQ"/>
                             </constraints>
                             <state key="normal" title="완료"/>
+                            <connections>
+                                <action selector="completionButtonTapped:" destination="-1" eventType="touchUpInside" id="NQW-sk-guC"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yX0-Fi-AoY">
                             <rect key="frame" x="244" y="76.5" width="30" height="30"/>
@@ -76,8 +74,6 @@
                         <constraint firstItem="yX0-Fi-AoY" firstAttribute="centerY" secondItem="zHH-Jd-86Q" secondAttribute="centerY" id="QlU-Kt-bik"/>
                         <constraint firstItem="8Z6-N5-Vxf" firstAttribute="centerX" secondItem="cM7-IN-Jfa" secondAttribute="centerX" id="WQe-GC-35z"/>
                         <constraint firstItem="1vG-KB-wO4" firstAttribute="top" secondItem="zHH-Jd-86Q" secondAttribute="bottom" constant="20" id="Ywl-xr-HWU"/>
-                        <constraint firstAttribute="trailing" secondItem="ciD-MC-idY" secondAttribute="trailing" constant="26" id="ZWv-sG-wI2"/>
-                        <constraint firstItem="ciD-MC-idY" firstAttribute="top" secondItem="cM7-IN-Jfa" secondAttribute="top" constant="26" id="aX2-dy-4kY"/>
                         <constraint firstItem="zHH-Jd-86Q" firstAttribute="leading" secondItem="1vG-KB-wO4" secondAttribute="leading" id="fN7-aE-mEC"/>
                         <constraint firstItem="yX0-Fi-AoY" firstAttribute="leading" secondItem="A3M-g6-pIo" secondAttribute="trailing" constant="10" id="jmi-iO-hST"/>
                         <constraint firstItem="zHH-Jd-86Q" firstAttribute="trailing" secondItem="1vG-KB-wO4" secondAttribute="trailing" id="no7-dc-SLu"/>
@@ -87,7 +83,7 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemGreenColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="cM7-IN-Jfa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Dw9-lh-idX"/>
                 <constraint firstItem="cM7-IN-Jfa" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="TIa-Ck-yvh"/>
@@ -101,9 +97,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

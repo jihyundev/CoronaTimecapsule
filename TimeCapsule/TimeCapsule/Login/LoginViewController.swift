@@ -20,7 +20,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func nicknameButtonTapped(_ sender: Any) {
-        let vc = NicknameSettingViewController()
+        let vc = NicknameViewController()
         vc.modalPresentationStyle = .overCurrentContext
         self.present(vc, animated: true, completion: nil)
         

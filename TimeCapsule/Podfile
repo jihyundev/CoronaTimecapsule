@@ -12,5 +12,6 @@ target 'TimeCapsule' do
   pod 'KakaoSDKCommon'
   pod 'KakaoSDKAuth'
   pod 'KakaoSDKUser'
+  pod 'lottie-ios'
 
 end

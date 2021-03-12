@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  ListViewController.swift
 //  TimeCapsule
 //
 //  Created by 정지현 on 2021/03/12.
@@ -7,19 +7,15 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class ListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
 
-    @IBAction func wishButtonTapped(_ sender: Any) {
-        let vc = NicknameSettingViewController()
-        vc.modalPresentationStyle = .overCurrentContext
-        self.present(vc, animated: true, completion: nil)
-        
+        // Do any additional setup after loading the view.
     }
     
+
     /*
     // MARK: - Navigation
 

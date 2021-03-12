@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class CapsuleNameViewController: UIViewController {
 
@@ -18,12 +19,13 @@ class CapsuleNameViewController: UIViewController {
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var containerView: UIView!
     
-    var name: String = ""
+    var name: String = "test"
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupUI()
+        
     }
     
     @IBAction func exitButtonTapped(_ sender: Any) {
@@ -31,8 +33,8 @@ class CapsuleNameViewController: UIViewController {
     }
     @IBAction func completionButtonTapped(_ sender: Any) {
         //닉네임 변경하기
+        editName(content: name)
         
-        self.dismiss(animated: true, completion: nil)
     }
     func setupUI() {
         containerView.layer.cornerRadius = 30
@@ -50,6 +52,16 @@ class CapsuleNameViewController: UIViewController {
         welcomeLabel.textColor = .white
     }
 
+    func editName(content: String) {
+        let url = URLType.capsuleName.makeURL
+        let headers: HTTPHeaders = ["X-ACCESS-TOKEN": Constant.testToken]
+        let params = ["capulseName": content]
+        AF.request(url, method: .patch, parameters: params, encoder: JSONParameterEncoder.default, headers: headers)
+            .response { response in
+                print(response)
+                self.dismiss(animated: true, completion: nil)
+            }
+    }
 }
 
 extension CapsuleNameViewController: UITextViewDelegate {

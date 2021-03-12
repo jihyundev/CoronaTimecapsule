@@ -10,13 +10,14 @@ import Foundation
 enum URLType {
     case capsuleInfo
     case capsuleName
+    case capsuleOpen
     
     case marbleList
     case addMarble
     case marbleCheck(Int)
     
     var baseURL: String {
-        return "www.vivi-pr.shop/"
+        return "https://www.vivi-pr.shop"
     }
     
     var makeURL: String {
@@ -25,6 +26,8 @@ enum URLType {
             return "\(baseURL)/v1/capsules"
         case .capsuleName:
             return "\(baseURL)/v1/capsules/name"
+        case .capsuleOpen:
+            return "\(baseURL)/v1/capsules/open"
             
         case .marbleList:
             return "\(baseURL)/v1/marbles"

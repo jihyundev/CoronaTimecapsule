@@ -16,6 +16,7 @@
                 <outlet property="editCapsuleNameButton" destination="lmL-WM-Tpj" id="78Z-4x-dIL"/>
                 <outlet property="gameView" destination="sEq-He-Vo3" id="yv1-Aa-FGK"/>
                 <outlet property="listButton" destination="gQV-3l-bCN" id="M2E-Uu-KD7"/>
+                <outlet property="nameLabel" destination="BxY-LE-dtE" id="Tcb-ii-Ukl"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -35,9 +36,17 @@
                         <constraint firstAttribute="width" constant="210" id="ZAJ-I8-chc"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gr-9g-WCX">
-                    <rect key="frame" x="348" y="812" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gr-9g-WCX">
+                    <rect key="frame" x="288" y="735" width="101" height="52"/>
+                    <color key="backgroundColor" red="0.45490196078431372" green="0.29019607843137252" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="101" id="Vxh-OJ-QZT"/>
+                        <constraint firstAttribute="height" constant="52" id="jKY-HI-he7"/>
+                    </constraints>
+                    <state key="normal" title="추가" image="small_dol_1">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="10" scale="default"/>
+                    </state>
                     <connections>
                         <action selector="addButtonTapped:" destination="-1" eventType="touchUpInside" id="7nk-BC-Bro"/>
                     </connections>
@@ -93,7 +102,7 @@
                 <constraint firstItem="UBf-zc-Kd0" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="CZX-UQ-rgn"/>
                 <constraint firstItem="UBf-zc-Kd0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IXI-Wb-kaZ"/>
                 <constraint firstItem="lmL-WM-Tpj" firstAttribute="centerY" secondItem="BxY-LE-dtE" secondAttribute="centerY" id="Jue-ze-38j"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1Gr-9g-WCX" secondAttribute="trailing" constant="20" id="SXT-2f-Z6r"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1Gr-9g-WCX" secondAttribute="trailing" constant="25" id="SXT-2f-Z6r"/>
                 <constraint firstItem="sEq-He-Vo3" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="30" id="Yas-nr-dpE"/>
                 <constraint firstItem="gQV-3l-bCN" firstAttribute="centerY" secondItem="CWP-Yp-vn4" secondAttribute="centerY" id="ZKc-Qa-oqV"/>
                 <constraint firstItem="BxY-LE-dtE" firstAttribute="leading" secondItem="CWP-Yp-vn4" secondAttribute="leading" id="ZQG-5q-qgA"/>
@@ -101,7 +110,7 @@
                 <constraint firstItem="CWP-Yp-vn4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="12" id="bDL-Rv-Fqz"/>
                 <constraint firstItem="sEq-He-Vo3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="5" id="o6Z-Vd-fyR"/>
                 <constraint firstItem="UBf-zc-Kd0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="q5b-1t-Hfi"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1Gr-9g-WCX" secondAttribute="bottom" constant="20" id="qxb-v5-vfl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1Gr-9g-WCX" secondAttribute="bottom" constant="75" id="qxb-v5-vfl"/>
                 <constraint firstItem="lmL-WM-Tpj" firstAttribute="leading" secondItem="BxY-LE-dtE" secondAttribute="trailing" id="rWm-g4-nQw"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="87.723214285714278"/>
@@ -111,6 +120,7 @@
         <image name="background_img" width="375" height="812"/>
         <image name="icon_revise" width="30" height="30"/>
         <image name="icon_rocket" width="30" height="30"/>
+        <image name="small_dol_1" width="40" height="40"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

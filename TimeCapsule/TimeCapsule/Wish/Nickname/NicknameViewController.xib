@@ -53,13 +53,13 @@
                                 <action selector="completionButtonTapped:" destination="-1" eventType="touchUpInside" id="NQW-sk-guC"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yX0-Fi-AoY">
-                            <rect key="frame" x="244" y="76.5" width="30" height="30"/>
-                            <state key="normal" title="x"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yX0-Fi-AoY">
+                            <rect key="frame" x="260" y="76.5" width="30" height="30"/>
+                            <state key="normal" image="icon_delete_text"/>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(0/10)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3M-g6-pIo">
-                            <rect key="frame" x="189" y="81" width="45" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <rect key="frame" x="231" y="85.5" width="29" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -70,12 +70,12 @@
                         <constraint firstAttribute="trailing" secondItem="1vG-KB-wO4" secondAttribute="trailing" constant="22" id="2ph-E1-RmQ"/>
                         <constraint firstAttribute="height" constant="209" id="8mz-tb-BHf"/>
                         <constraint firstItem="A3M-g6-pIo" firstAttribute="centerY" secondItem="yX0-Fi-AoY" secondAttribute="centerY" id="A3C-ap-o5B"/>
-                        <constraint firstItem="zHH-Jd-86Q" firstAttribute="trailing" secondItem="yX0-Fi-AoY" secondAttribute="trailing" constant="16" id="Ck6-LO-61A"/>
+                        <constraint firstItem="zHH-Jd-86Q" firstAttribute="trailing" secondItem="yX0-Fi-AoY" secondAttribute="trailing" id="Ck6-LO-61A"/>
                         <constraint firstItem="yX0-Fi-AoY" firstAttribute="centerY" secondItem="zHH-Jd-86Q" secondAttribute="centerY" id="QlU-Kt-bik"/>
                         <constraint firstItem="8Z6-N5-Vxf" firstAttribute="centerX" secondItem="cM7-IN-Jfa" secondAttribute="centerX" id="WQe-GC-35z"/>
                         <constraint firstItem="1vG-KB-wO4" firstAttribute="top" secondItem="zHH-Jd-86Q" secondAttribute="bottom" constant="20" id="Ywl-xr-HWU"/>
                         <constraint firstItem="zHH-Jd-86Q" firstAttribute="leading" secondItem="1vG-KB-wO4" secondAttribute="leading" id="fN7-aE-mEC"/>
-                        <constraint firstItem="yX0-Fi-AoY" firstAttribute="leading" secondItem="A3M-g6-pIo" secondAttribute="trailing" constant="10" id="jmi-iO-hST"/>
+                        <constraint firstItem="yX0-Fi-AoY" firstAttribute="leading" secondItem="A3M-g6-pIo" secondAttribute="trailing" id="jmi-iO-hST"/>
                         <constraint firstItem="zHH-Jd-86Q" firstAttribute="trailing" secondItem="1vG-KB-wO4" secondAttribute="trailing" id="no7-dc-SLu"/>
                         <constraint firstItem="8Z6-N5-Vxf" firstAttribute="top" secondItem="cM7-IN-Jfa" secondAttribute="top" constant="28" id="sOJ-0i-D1N"/>
                         <constraint firstAttribute="width" constant="312" id="tsL-hN-hWU"/>
@@ -92,6 +92,7 @@
         </view>
     </objects>
     <resources>
+        <image name="icon_delete_text" width="30" height="30"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -8,12 +8,18 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
+    let dataManager = UserDataManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-    @IBAction func wishButtonTapped(_ sender: Any) {
+    
+    @IBAction func loginButtonTapped(_ sender: Any) {
+        dataManager.kakaoLogin(viewController: self)
+    }
+    
+    @IBAction func nicknameButtonTapped(_ sender: Any) {
         let vc = NicknameSettingViewController()
         vc.modalPresentationStyle = .overCurrentContext
         self.present(vc, animated: true, completion: nil)

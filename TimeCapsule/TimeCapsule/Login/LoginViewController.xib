@@ -19,23 +19,33 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5p-4u-DMe">
-                    <rect key="frame" x="159" y="433" width="96" height="30"/>
+                    <rect key="frame" x="159" y="483" width="96" height="30"/>
                     <state key="normal" title="Set Nickname"/>
                     <connections>
-                        <action selector="wishButtonTapped:" destination="-1" eventType="touchUpInside" id="WXS-qY-PzL"/>
+                        <action selector="nicknameButtonTapped:" destination="-1" eventType="touchUpInside" id="6cr-eI-NEy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bH-ec-ra3">
+                    <rect key="frame" x="115.5" y="395.5" width="183" height="45"/>
+                    <state key="normal" image="kakao_login_medium_narrow"/>
+                    <connections>
+                        <action selector="loginButtonTapped:" destination="-1" eventType="touchUpInside" id="4L0-LT-4W8"/>
                     </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="5bH-ec-ra3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1ln-Sz-m4s"/>
                 <constraint firstItem="w5p-4u-DMe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ALP-J5-pP4"/>
-                <constraint firstItem="w5p-4u-DMe" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="FH0-Yr-YMf"/>
+                <constraint firstItem="w5p-4u-DMe" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="50" id="FH0-Yr-YMf"/>
+                <constraint firstItem="5bH-ec-ra3" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-30" id="PPy-tK-kHs"/>
             </constraints>
-            <point key="canvasLocation" x="-146" y="64"/>
+            <point key="canvasLocation" x="-146.37681159420291" y="63.616071428571423"/>
         </view>
     </objects>
     <resources>
+        <image name="kakao_login_medium_narrow" width="183" height="45"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

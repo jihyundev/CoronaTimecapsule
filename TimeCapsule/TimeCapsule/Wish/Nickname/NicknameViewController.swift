@@ -22,6 +22,7 @@ class NicknameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameTextView.delegate = self
         setupUI()
     }
     @IBAction func completionButtonTapped(_ sender: Any) {
@@ -31,6 +32,9 @@ class NicknameViewController: UIViewController {
         self.dismiss(animated: true) {
             pvc.present(nextVC, animated: true, completion: nil)
         }
+    }
+    @IBAction func deleteButtonTapped(_ sender: Any) {
+        nameTextView.text = ""
     }
     
     func setupUI() {

@@ -63,12 +63,12 @@
                                 <action selector="completionButtonTapped:" destination="-1" eventType="touchUpInside" id="0lg-xf-D2C"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lF-VN-oX7">
-                            <rect key="frame" x="244" y="76.5" width="30" height="30"/>
-                            <state key="normal" title="x"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lF-VN-oX7">
+                            <rect key="frame" x="260" y="76.5" width="30" height="30"/>
+                            <state key="normal" image="icon_delete_text"/>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(0/10)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBW-Ki-H7q">
-                            <rect key="frame" x="189" y="81" width="45" height="21"/>
+                            <rect key="frame" x="215" y="81" width="45" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -84,8 +84,8 @@
                         <constraint firstItem="27f-50-9Wc" firstAttribute="top" secondItem="8K7-t3-qnb" secondAttribute="top" constant="28" id="beo-w7-nbv"/>
                         <constraint firstItem="7cn-My-wIZ" firstAttribute="top" secondItem="8K7-t3-qnb" secondAttribute="top" constant="26" id="c65-zr-Zf4"/>
                         <constraint firstItem="YVx-bM-hCQ" firstAttribute="top" secondItem="lqb-Xr-YSo" secondAttribute="bottom" constant="20" id="dzZ-cH-RIS"/>
-                        <constraint firstItem="2lF-VN-oX7" firstAttribute="leading" secondItem="rBW-Ki-H7q" secondAttribute="trailing" constant="10" id="eft-DY-k8t"/>
-                        <constraint firstItem="lqb-Xr-YSo" firstAttribute="trailing" secondItem="2lF-VN-oX7" secondAttribute="trailing" constant="16" id="f0N-F1-h1J"/>
+                        <constraint firstItem="2lF-VN-oX7" firstAttribute="leading" secondItem="rBW-Ki-H7q" secondAttribute="trailing" id="eft-DY-k8t"/>
+                        <constraint firstItem="lqb-Xr-YSo" firstAttribute="trailing" secondItem="2lF-VN-oX7" secondAttribute="trailing" id="f0N-F1-h1J"/>
                         <constraint firstAttribute="height" constant="209" id="fXV-rf-0Xj"/>
                         <constraint firstItem="rBW-Ki-H7q" firstAttribute="centerY" secondItem="2lF-VN-oX7" secondAttribute="centerY" id="qYn-IC-A4M"/>
                         <constraint firstAttribute="trailing" secondItem="7cn-My-wIZ" secondAttribute="trailing" constant="26" id="s4Q-FT-fxn"/>
@@ -112,6 +112,7 @@
         </view>
     </objects>
     <resources>
+        <image name="icon_delete_text" width="30" height="30"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

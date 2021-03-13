@@ -40,7 +40,7 @@ extension FinishedListViewController: UITableViewDataSource, UITableViewDelegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: wishCell.cellID) as! FinishedListCell
         let wish = marbleList[indexPath.row]
-        cell.wishLabel.text = wish.content
+        cell.content = wish.content
         cell.dateLabel.text = wish.createdAt
         switch wish.marbleColor {
         case 0:

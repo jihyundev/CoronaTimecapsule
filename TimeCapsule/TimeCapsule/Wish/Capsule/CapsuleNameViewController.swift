@@ -32,8 +32,8 @@ class CapsuleNameViewController: UIViewController {
     }
     @IBAction func completionButtonTapped(_ sender: Any) {
         //닉네임 변경하기
+        editName(content: name)
         
-        self.dismiss(animated: true, completion: nil)
     }
     func setupUI() {
         containerView.layer.cornerRadius = 30

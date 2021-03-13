@@ -21,6 +21,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NicknameViewController" customModule="TimeCapsule" customModuleProvider="target">
             <connections>
+                <outlet property="centerY" destination="TIa-Ck-yvh" id="7qB-zf-4xm"/>
                 <outlet property="completionButton" destination="1vG-KB-wO4" id="5QH-JT-C9b"/>
                 <outlet property="containerView" destination="cM7-IN-Jfa" id="U5M-No-hwE"/>
                 <outlet property="nameTextView" destination="zHH-Jd-86Q" id="Frm-8l-awu"/>
@@ -98,7 +99,7 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="cM7-IN-Jfa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Dw9-lh-idX"/>
                 <constraint firstItem="cM7-IN-Jfa" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="TIa-Ck-yvh"/>

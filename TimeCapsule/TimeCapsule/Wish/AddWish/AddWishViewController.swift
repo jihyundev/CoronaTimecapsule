@@ -22,6 +22,7 @@ class AddWishViewController: UIViewController{
     
     @IBOutlet weak var openImageView: UIImageView!
     
+    @IBOutlet weak var centerY: NSLayoutConstraint!
     var delegate: ReloadDelegate?
     var tagID: Int = 0
     lazy var tagView = UIView(frame: CGRect(x: tagButton.frame.origin.x, y: tagButton.frame.origin.y, width: 61, height: 128))
@@ -30,7 +31,30 @@ class AddWishViewController: UIViewController{
         super.viewDidLoad()
         wishTextView.delegate = self
         setupUI()
+     prepareKeyboard()
+    }
+    
+    func prepareKeyboard() {
+        NotificationCenter.default.addObserver(self, selector: #selector(adjustInputView), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(adjustInputView), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc private func adjustInputView(noti: Notification) {
+        print(#function)
+        guard let userInfo = noti.userInfo else { return }
+        guard let keyboardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else { return }
         
+        if noti.name == UIResponder.keyboardWillShowNotification{
+            centerY.constant = -keyboardFrame.height / 3
+            UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseInOut], animations: {
+                self.view.layoutIfNeeded()
+            }, completion: nil)
+        } else {
+            centerY.constant = 0
+            UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseInOut], animations: {
+                self.view.layoutIfNeeded()
+            }, completion: nil)
+        }
     }
     
     @IBAction func tagButtonTapped(_ sender: Any) {

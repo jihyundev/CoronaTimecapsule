@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class AddWishViewController: UIViewController{
     
@@ -19,6 +20,7 @@ class AddWishViewController: UIViewController{
     @IBOutlet weak var tagBaseCircleView: UIView!
     @IBOutlet weak var tagBaseView: UIView!
     
+    @IBOutlet weak var openImageView: UIImageView!
     
     var tagID: Int = 0
     lazy var tagView = UIView(frame: CGRect(x: tagButton.frame.origin.x, y: tagButton.frame.origin.y, width: 61, height: 128))
@@ -37,7 +39,7 @@ class AddWishViewController: UIViewController{
     @IBAction func completionButtonTapped(_ sender: Any) {
         
         //서버로 데이터 전송
-        
+        addMarbles(content: "test", index: 1)
         //dismiss
         self.dismiss(animated: true, completion: nil)
     }
@@ -67,7 +69,7 @@ class AddWishViewController: UIViewController{
         tagBaseCircleView.borderWidth = 3
         tagBaseCircleView.borderColor = .black
         
-     
+        
 
     }
     
@@ -100,8 +102,38 @@ class AddWishViewController: UIViewController{
         tagCollectionView.delegate = self
         
         tagView.addSubview(tagCollectionView)
+        
+        let imageView: UIImageView = {
+            let view = UIImageView()
+            view.image = UIImage(named: "icon_open")
+            view.translatesAutoresizingMaskIntoConstraints = false
+            return view
+        }()
+        tagView.addSubview(imageView)
+        imageView.trailingAnchor.constraint(equalTo: tagView.trailingAnchor).isActive = true
+        imageView.topAnchor.constraint(equalTo: tagView.topAnchor, constant: 0.5).isActive = true
     }
     
+    func addMarbles(content: String, index: Int) {
+        let headers: HTTPHeaders = ["X-ACCESS-TOKEN": Constant.testToken]
+        let params = ["content": content,
+                      "marbleColor": "\(index)"]
+//        NetworkService.postData(type: .addMarble, headers: headers, parameters: params) { [weak self] (result: Result<AddMarble,APIError>) in
+//            switch result {
+//            case .success(let model):
+//                print(model)
+//            case .failure(let error):
+//                print(error.localizedDescription)
+//            }
+//        }
+        let url = URLType.addMarble.makeURL
+        AF.request(url, method: .post, parameters: params, encoder: JSONParameterEncoder.default, headers: headers)
+            .response { response in
+                print(response)
+              
+            }
+            
+    }
 }
 
 extension AddWishViewController: UICollectionViewDataSource, UICollectionViewDelegate {

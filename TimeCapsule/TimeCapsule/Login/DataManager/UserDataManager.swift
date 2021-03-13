@@ -119,8 +119,6 @@ class UserDataManager {
     
     // 회원가입
     func join(nickname: String, token: String, viewController: NicknameViewController) {
-        let ud = UserDefaults.standard
-        let token = ud.string(forKey: "loginJWTToken")!
         let url = "https://www.vivi-pr.shop/v1/users/signUp"
         let parameters: [String: Any] = [
             "nickname" : nickname

@@ -251,8 +251,10 @@ extension MainViewController: ReloadDelegate {
         
         UIView.animate(withDuration: 5, delay: 0, options: .curveEaseIn) {
             print(self.rocketImageView.frame.origin.y, self.gameView.frame.origin.y)
+            print(self.rocketBottomImageView.frame.origin.y)
             self.rocketImageView.frame.origin = CGPoint(x: self.rocketImageView.frame.origin.x, y: -1100)
             self.gameView.frame.origin = CGPoint(x: self.gameView.frame.origin.x, y: -831)
+            self.rocketBottomImageView.frame.origin = CGPoint(x: self.gameView.frame.origin.x, y: -801.33333)
 
         } completion: { result in
             print(result.description)

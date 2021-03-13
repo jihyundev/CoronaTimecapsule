@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class CapsuleNameViewController: UIViewController {
 
@@ -18,7 +19,7 @@ class CapsuleNameViewController: UIViewController {
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var containerView: UIView!
     
-    var name: String = ""
+    var name: String = "test"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +51,16 @@ class CapsuleNameViewController: UIViewController {
         welcomeLabel.textColor = .white
     }
 
+    func editName(content: String) {
+        let url = URLType.capsuleName.makeURL
+        let headers: HTTPHeaders = ["X-ACCESS-TOKEN": Constant.testToken]
+        let params = ["capulseName": content]
+        AF.request(url, method: .patch, parameters: params, encoder: JSONParameterEncoder.default, headers: headers)
+            .response { response in
+                print(response)
+                self.dismiss(animated: true, completion: nil)
+            }
+    }
 }
 
 extension CapsuleNameViewController: UITextViewDelegate {

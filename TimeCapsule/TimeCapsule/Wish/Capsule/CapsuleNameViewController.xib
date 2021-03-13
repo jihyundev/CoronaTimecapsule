@@ -21,6 +21,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CapsuleNameViewController" customModule="TimeCapsule" customModuleProvider="target">
             <connections>
+                <outlet property="centerY" destination="Bmc-aB-i6a" id="ouB-nJ-7nx"/>
                 <outlet property="completionButton" destination="YVx-bM-hCQ" id="saA-kC-PIg"/>
                 <outlet property="containerView" destination="8K7-t3-qnb" id="Mm4-Tu-HXO"/>
                 <outlet property="deleteButton" destination="2lF-VN-oX7" id="kfh-m6-SIM"/>

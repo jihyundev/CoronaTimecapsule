@@ -19,12 +19,38 @@ class NicknameViewController: UIViewController {
     
     @IBOutlet weak var containerView: UIView!
     
+    @IBOutlet weak var centerY: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         nameTextView.delegate = self
         setupUI()
+        prepareKeyboard()
     }
+    
+    func prepareKeyboard() {
+        NotificationCenter.default.addObserver(self, selector: #selector(adjustInputView), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(adjustInputView), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc private func adjustInputView(noti: Notification) {
+        print(#function)
+        guard let userInfo = noti.userInfo else { return }
+        guard let keyboardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else { return }
+        
+        if noti.name == UIResponder.keyboardWillShowNotification{
+            centerY.constant = -keyboardFrame.height / 3
+            UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseInOut], animations: {
+                self.view.layoutIfNeeded()
+            }, completion: nil)
+        } else {
+            centerY.constant = 0
+            UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseInOut], animations: {
+                self.view.layoutIfNeeded()
+            }, completion: nil)
+        }
+    }
+    
     @IBAction func completionButtonTapped(_ sender: Any) {
         guard let pvc = self.presentingViewController else { return }
         let nextVC = MainViewController()

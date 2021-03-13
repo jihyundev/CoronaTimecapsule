@@ -18,6 +18,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddWishViewController" customModule="TimeCapsule" customModuleProvider="target">
             <connections>
+                <outlet property="centerY" destination="dKt-cx-Qdj" id="a7r-X1-kKy"/>
                 <outlet property="closeButton" destination="PM2-gh-I2m" id="PhI-VQ-huR"/>
                 <outlet property="completionButton" destination="xcb-x4-Z4N" id="oKo-Wt-TAa"/>
                 <outlet property="containerView" destination="bNa-TC-qJm" id="5Cu-zR-h7E"/>

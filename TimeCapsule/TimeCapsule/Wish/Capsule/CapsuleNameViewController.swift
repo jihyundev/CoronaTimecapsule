@@ -18,6 +18,7 @@ class CapsuleNameViewController: UIViewController {
     @IBOutlet weak var deleteButton: UIButton!
     @IBOutlet weak var containerView: UIView!
     
+    @IBOutlet weak var centerY: NSLayoutConstraint!
     var name: String = ""
     var delegate: ReloadDelegate?
     
@@ -25,8 +26,32 @@ class CapsuleNameViewController: UIViewController {
         super.viewDidLoad()
         nameTextView.delegate = self
         setupUI()
+        prepareKeyboard()
+        
     }
     
+    func prepareKeyboard() {
+        NotificationCenter.default.addObserver(self, selector: #selector(adjustInputView), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(adjustInputView), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc private func adjustInputView(noti: Notification) {
+        print(#function)
+        guard let userInfo = noti.userInfo else { return }
+        guard let keyboardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else { return }
+        
+        if noti.name == UIResponder.keyboardWillShowNotification{
+            centerY.constant = -keyboardFrame.height / 3
+            UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseInOut], animations: {
+                self.view.layoutIfNeeded()
+            }, completion: nil)
+        } else {
+            centerY.constant = 0
+            UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseInOut], animations: {
+                self.view.layoutIfNeeded()
+            }, completion: nil)
+        }
+    }
     @IBAction func exitButtonTapped(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }

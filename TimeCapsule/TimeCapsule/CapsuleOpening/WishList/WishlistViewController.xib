@@ -7,20 +7,31 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Spoqa Han Sans Neo Bold.otf">
+            <string>SpoqaHanSansNeo-Bold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WishlistViewController" customModule="TimeCapsule" customModuleProvider="target">
             <connections>
                 <outlet property="blueCircle" destination="QOD-3H-vnx" id="64X-u7-bNs"/>
+                <outlet property="blueLabel" destination="oZV-ts-jIh" id="Nbp-53-WdW"/>
                 <outlet property="blueView" destination="uBu-hB-Iop" id="u7l-BL-4dY"/>
+                <outlet property="colorView" destination="duf-rm-NXt" id="Yo0-bj-chc"/>
                 <outlet property="greenCircle" destination="KSm-Ha-toJ" id="G13-IK-j51"/>
+                <outlet property="greenLabel" destination="sXI-Np-ErL" id="iKq-Ri-lfb"/>
                 <outlet property="greenView" destination="SJH-pd-kbr" id="oMe-Kp-NJ4"/>
                 <outlet property="purpleCircle" destination="vUU-C5-dXw" id="EtC-qz-V6s"/>
+                <outlet property="purpleLabel" destination="etz-oD-U0G" id="urm-Dc-fLX"/>
                 <outlet property="purpleView" destination="aO1-9X-6rZ" id="gjV-0i-LaM"/>
                 <outlet property="redCircle" destination="M4r-Gx-f6U" id="07h-Uu-QgM"/>
+                <outlet property="redLabel" destination="wWY-b5-bhL" id="iga-pN-pqu"/>
                 <outlet property="redView" destination="iLC-Tr-BEK" id="VB2-yb-upS"/>
                 <outlet property="tableView" destination="b5y-YN-ayc" id="3qL-vI-X8H"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="yellowCircle" destination="bmN-m0-fsa" id="ciE-VJ-Die"/>
+                <outlet property="yellowLabel" destination="pSo-sV-ALQ" id="x0z-z4-zhl"/>
                 <outlet property="yellowView" destination="YSM-Ms-978" id="1Pa-Vl-Ka8"/>
             </connections>
         </placeholder>
@@ -58,8 +69,18 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWY-b5-bhL">
+                                            <rect key="frame" x="46" y="6" width="10" height="19.5"/>
+                                            <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="wWY-b5-bhL" firstAttribute="centerY" secondItem="iLC-Tr-BEK" secondAttribute="centerY" id="HYd-mB-2k5"/>
+                                        <constraint firstAttribute="trailing" secondItem="wWY-b5-bhL" secondAttribute="trailing" constant="12" id="Sm1-ot-8oB"/>
+                                    </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSM-Ms-978">
                                     <rect key="frame" x="76" y="0.0" width="68" height="31"/>
@@ -77,8 +98,18 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSo-sV-ALQ">
+                                            <rect key="frame" x="46" y="6" width="10" height="19.5"/>
+                                            <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="pSo-sV-ALQ" firstAttribute="centerY" secondItem="YSM-Ms-978" secondAttribute="centerY" id="ZXD-Hd-i3d"/>
+                                        <constraint firstAttribute="trailing" secondItem="pSo-sV-ALQ" secondAttribute="trailing" constant="12" id="q5o-PO-d2L"/>
+                                    </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJH-pd-kbr">
                                     <rect key="frame" x="152" y="0.0" width="68" height="31"/>
@@ -96,8 +127,18 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXI-Np-ErL">
+                                            <rect key="frame" x="46" y="6" width="10" height="19.5"/>
+                                            <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="sXI-Np-ErL" firstAttribute="centerY" secondItem="SJH-pd-kbr" secondAttribute="centerY" id="aaG-Lt-CPI"/>
+                                        <constraint firstAttribute="trailing" secondItem="sXI-Np-ErL" secondAttribute="trailing" constant="12" id="lyL-cD-EQQ"/>
+                                    </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBu-hB-Iop">
                                     <rect key="frame" x="228" y="0.0" width="68" height="31"/>
@@ -115,8 +156,18 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZV-ts-jIh">
+                                            <rect key="frame" x="46" y="6" width="10" height="19.5"/>
+                                            <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="oZV-ts-jIh" secondAttribute="trailing" constant="12" id="f8X-dr-wPF"/>
+                                        <constraint firstItem="oZV-ts-jIh" firstAttribute="centerY" secondItem="uBu-hB-Iop" secondAttribute="centerY" id="pu3-Bm-W5a"/>
+                                    </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aO1-9X-6rZ">
                                     <rect key="frame" x="304" y="0.0" width="68" height="31"/>
@@ -134,8 +185,18 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etz-oD-U0G">
+                                            <rect key="frame" x="46" y="6" width="10" height="19.5"/>
+                                            <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="etz-oD-U0G" firstAttribute="centerY" secondItem="aO1-9X-6rZ" secondAttribute="centerY" id="cvY-II-cfg"/>
+                                        <constraint firstAttribute="trailing" secondItem="etz-oD-U0G" secondAttribute="trailing" constant="12" id="nzK-dc-jgb"/>
+                                    </constraints>
                                 </view>
                             </subviews>
                         </stackView>

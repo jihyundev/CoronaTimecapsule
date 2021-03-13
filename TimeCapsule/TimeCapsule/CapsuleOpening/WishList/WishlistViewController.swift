@@ -28,6 +28,14 @@ class WishlistViewController: UIViewController {
     @IBOutlet weak var blueCircle: UIView!
     @IBOutlet weak var purpleCircle: UIView!
     
+    @IBOutlet weak var redLabel: UILabel!
+    @IBOutlet weak var yellowLabel: UILabel!
+    @IBOutlet weak var greenLabel: UILabel!
+    @IBOutlet weak var blueLabel: UILabel!
+    @IBOutlet weak var purpleLabel: UILabel!
+    
+    @IBOutlet weak var colorView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -61,12 +69,22 @@ class WishlistViewController: UIViewController {
         greenCircle.layer.cornerRadius = redCircle.frame.size.width/2
         blueCircle.layer.cornerRadius = redCircle.frame.size.width/2
         purpleCircle.layer.cornerRadius = redCircle.frame.size.width/2
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        colorView.setNeedsDisplay()
+        //tableView.reloadData()
     }
     
     
     func didSuccessMarbleList() {
         tableView.reloadData()
+        redLabel.text = String(marbleColorCount[0].marbleCount)
+        yellowLabel.text = String(marbleColorCount[1].marbleCount)
+        greenLabel.text = String(marbleColorCount[2].marbleCount)
+        blueLabel.text = String(marbleColorCount[3].marbleCount)
+        purpleLabel.text = String(marbleColorCount[4].marbleCount)
+        viewWillAppear(true)
     }
 
 }
@@ -98,5 +116,9 @@ extension WishlistViewController: UITableViewDataSource, UITableViewDelegate {
         }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("row number \(indexPath.row) selected")
     }
 }

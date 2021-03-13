@@ -19,6 +19,11 @@ extension String {
     var trim: String? {
         return self.trimmingCharacters(in: .whitespacesAndNewlines)
     }
+    // 주어진 문자열 찾아서 NSRange 찾아주는 함수
+    func nsrange(of value : String) -> NSRange {
+        let nsString : NSString = NSString(string: self)
+        return nsString.range(of: value)
+    }
     
     
     // MARK: 다국어 지원 (localization)

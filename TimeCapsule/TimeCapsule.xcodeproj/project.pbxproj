@@ -167,10 +167,12 @@
 				2505245725FC377700A4E929 /* WishList */,
 				2505244E25FC377700A4E929 /* Finished */,
 				2505244C25FC377700A4E929 /* ListViewController.swift */,
-				2505244D25FC377700A4E929 /* FocusView.xib */,
 				2505245325FC377700A4E929 /* Main.storyboard */,
 				2505245525FC377700A4E929 /* MenuCell.swift */,
 				2505245625FC377700A4E929 /* MenuCell.xib */,
+				2505246E25FC387100A4E929 /* Entity */,
+				2505246F25FC387600A4E929 /* DataManager */,
+				2505244D25FC377700A4E929 /* FocusView.xib */,
 			);
 			name = CapsuleOpening;
 			path = "../../../../Downloads/CoronaTimecapsule-main-3/TimeCapsule/TimeCapsule/CapsuleOpening";
@@ -179,10 +181,10 @@
 		2505244E25FC377700A4E929 /* Finished */ = {
 			isa = PBXGroup;
 			children = (
-				2505244F25FC377700A4E929 /* FinishedListCell.xib */,
 				2505245025FC377700A4E929 /* FinishedListViewController.swift */,
-				2505245125FC377700A4E929 /* FinishedListCell.swift */,
 				2505245225FC377700A4E929 /* FinishedListViewController.xib */,
+				2505245125FC377700A4E929 /* FinishedListCell.swift */,
+				2505244F25FC377700A4E929 /* FinishedListCell.xib */,
 			);
 			path = Finished;
 			sourceTree = "<group>";
@@ -192,10 +194,24 @@
 			children = (
 				2505245825FC377700A4E929 /* WishlistViewController.swift */,
 				2505245925FC377700A4E929 /* WishlistViewController.xib */,
-				2505245A25FC377700A4E929 /* WishlistCell.xib */,
 				2505245B25FC377700A4E929 /* WishlistCell.swift */,
+				2505245A25FC377700A4E929 /* WishlistCell.xib */,
 			);
 			path = WishList;
+			sourceTree = "<group>";
+		};
+		2505246E25FC387100A4E929 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2505246F25FC387600A4E929 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataManager;
 			sourceTree = "<group>";
 		};
 		2516E83725FB7C6800ADD135 /* MyPage */ = {

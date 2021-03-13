@@ -36,6 +36,8 @@
 		59399AB925FC365E006CBE10 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59399AB825FC365E006CBE10 /* MenuCell.swift */; };
 		59D5474325FBB5FF004763B4 /* FinishedListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D5474125FBB5FF004763B4 /* FinishedListCell.swift */; };
 		59D5474425FBB5FF004763B4 /* FinishedListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59D5474225FBB5FF004763B4 /* FinishedListCell.xib */; };
+		59E1B03A25FC556D00B46A4A /* WishList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E1B03925FC556D00B46A4A /* WishList.swift */; };
+		59E1B03D25FC55B800B46A4A /* WishlistDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E1B03C25FC55B800B46A4A /* WishlistDataManager.swift */; };
 		59E971AD25FB0007008A7EF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E971AC25FB0007008A7EF9 /* AppDelegate.swift */; };
 		59E971AF25FB0007008A7EF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E971AE25FB0007008A7EF9 /* SceneDelegate.swift */; };
 		59E971B425FB0007008A7EF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59E971B225FB0007008A7EF9 /* Main.storyboard */; };
@@ -105,6 +107,8 @@
 		59399AB825FC365E006CBE10 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		59D5474125FBB5FF004763B4 /* FinishedListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedListCell.swift; sourceTree = "<group>"; };
 		59D5474225FBB5FF004763B4 /* FinishedListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FinishedListCell.xib; sourceTree = "<group>"; };
+		59E1B03925FC556D00B46A4A /* WishList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishList.swift; sourceTree = "<group>"; };
+		59E1B03C25FC55B800B46A4A /* WishlistDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistDataManager.swift; sourceTree = "<group>"; };
 		59E971A925FB0007008A7EF9 /* TimeCapsule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeCapsule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E971AC25FB0007008A7EF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59E971AE25FB0007008A7EF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -213,6 +217,22 @@
 				25437B6825FC424A00F3C8EF /* EndPopUpViewController.xib */,
 			);
 			path = EndPopUp;
+			sourceTree = "<group>";
+		};
+		59E1B03625FC51E800B46A4A /* ListDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				59E1B03C25FC55B800B46A4A /* WishlistDataManager.swift */,
+			);
+			path = ListDataManager;
+			sourceTree = "<group>";
+		};
+		59E1B03725FC520200B46A4A /* ListEntity */ = {
+			isa = PBXGroup;
+			children = (
+				59E1B03925FC556D00B46A4A /* WishList.swift */,
+			);
+			path = ListEntity;
 			sourceTree = "<group>";
 		};
 		59E971A025FB0007008A7EF9 = {
@@ -363,6 +383,8 @@
 		59E971F325FB0496008A7EF9 /* CapsuleOpening */ = {
 			isa = PBXGroup;
 			children = (
+				59E1B03725FC520200B46A4A /* ListEntity */,
+				59E1B03625FC51E800B46A4A /* ListDataManager */,
 				59E9725725FB7749008A7EF9 /* WishList */,
 				59E9725825FB775F008A7EF9 /* Finished */,
 				59E9721F25FB1B4B008A7EF9 /* ListViewController.swift */,
@@ -565,6 +587,7 @@
 				59E971DB25FB003B008A7EF9 /* UIView.swift in Sources */,
 				252076EE25FB3A8D004366E4 /* AddWishViewController.swift in Sources */,
 				59399AB925FC365E006CBE10 /* MenuCell.swift in Sources */,
+				59E1B03A25FC556D00B46A4A /* WishList.swift in Sources */,
 				59E971AD25FB0007008A7EF9 /* AppDelegate.swift in Sources */,
 				252076F925FB44E0004366E4 /* TagCollectionViewCell.swift in Sources */,
 				59E971DF25FB003B008A7EF9 /* UINavigationBar.swift in Sources */,
@@ -578,6 +601,7 @@
 				59E971F525FB0512008A7EF9 /* UIViewController.swift in Sources */,
 				59E971AF25FB0007008A7EF9 /* SceneDelegate.swift in Sources */,
 				59D5474325FBB5FF004763B4 /* FinishedListCell.swift in Sources */,
+				59E1B03D25FC55B800B46A4A /* WishlistDataManager.swift in Sources */,
 				59E9725B25FB777D008A7EF9 /* WishlistViewController.swift in Sources */,
 				59E971E125FB003B008A7EF9 /* Color.swift in Sources */,
 				59E971E025FB003B008A7EF9 /* UIFont.swift in Sources */,

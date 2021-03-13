@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrc-7Q-X99">
-                                <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                                <rect key="frame" x="18" y="44" width="396" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="pbE-4Y-RHG"/>
                                 </constraints>
@@ -44,7 +44,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="zrc-7Q-X99" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3VQ-nY-AZ3"/>
-                            <constraint firstItem="zrc-7Q-X99" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7nG-O1-tks"/>
+                            <constraint firstItem="zrc-7Q-X99" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="7nG-O1-tks"/>
                             <constraint firstItem="hwz-IG-AIf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Y0E-jw-QHw"/>
                             <constraint firstItem="dOH-T1-2YV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="heG-AK-eKa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dOH-T1-2YV" secondAttribute="trailing" constant="21" id="pk9-Fd-yiH"/>
@@ -64,7 +64,7 @@
             <objects>
                 <viewController id="V0g-H8-Hkq" customClass="PagingMenuViewController" customModule="PagingKit" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wFC-Jt-3bk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                        <rect key="frame" x="0.0" y="0.0" width="396" height="60"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="jFL-4l-5zh"/>
                     </view>

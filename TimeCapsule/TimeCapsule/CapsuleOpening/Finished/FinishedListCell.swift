@@ -18,7 +18,7 @@ class FinishedListCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.backgroundColor = #colorLiteral(red: 0.4756628871, green: 0.3672500849, blue: 0.8775171638, alpha: 1)
+        self.backgroundColor = #colorLiteral(red: 0.4529297948, green: 0.2904702425, blue: 1, alpha: 1)
         mainBackgroundView.layer.cornerRadius = 8
         mainBackgroundView.layer.borderColor = UIColor.black.cgColor
         mainBackgroundView.layer.borderWidth = 3

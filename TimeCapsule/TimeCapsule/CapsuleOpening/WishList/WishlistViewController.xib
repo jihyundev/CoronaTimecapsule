@@ -10,12 +10,17 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WishlistViewController" customModule="TimeCapsule" customModuleProvider="target">
             <connections>
+                <outlet property="blueCircle" destination="QOD-3H-vnx" id="64X-u7-bNs"/>
                 <outlet property="blueView" destination="uBu-hB-Iop" id="u7l-BL-4dY"/>
+                <outlet property="greenCircle" destination="KSm-Ha-toJ" id="G13-IK-j51"/>
                 <outlet property="greenView" destination="SJH-pd-kbr" id="oMe-Kp-NJ4"/>
+                <outlet property="purpleCircle" destination="vUU-C5-dXw" id="EtC-qz-V6s"/>
                 <outlet property="purpleView" destination="aO1-9X-6rZ" id="gjV-0i-LaM"/>
+                <outlet property="redCircle" destination="M4r-Gx-f6U" id="07h-Uu-QgM"/>
                 <outlet property="redView" destination="iLC-Tr-BEK" id="VB2-yb-upS"/>
                 <outlet property="tableView" destination="b5y-YN-ayc" id="3qL-vI-X8H"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yellowCircle" destination="bmN-m0-fsa" id="ciE-VJ-Die"/>
                 <outlet property="yellowView" destination="YSM-Ms-978" id="1Pa-Vl-Ka8"/>
             </connections>
         </placeholder>
@@ -36,28 +41,106 @@
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iLC-Tr-BEK">
                                     <rect key="frame" x="0.0" y="0.0" width="68" height="31"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M4r-Gx-f6U">
+                                            <rect key="frame" x="8" y="8" width="15" height="15"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.92730319500000002" green="0.3930332661" blue="0.36860594149999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="6"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSM-Ms-978">
                                     <rect key="frame" x="76" y="0.0" width="68" height="31"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bmN-m0-fsa">
+                                            <rect key="frame" x="8" y="8" width="15" height="15"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.99408692119999997" green="0.97735697030000002" blue="0.50970214609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJH-pd-kbr">
                                     <rect key="frame" x="152" y="0.0" width="68" height="31"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KSm-Ha-toJ">
+                                            <rect key="frame" x="8" y="8" width="15" height="15"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.69346886870000002" green="0.94917255639999998" blue="0.56463819739999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBu-hB-Iop">
                                     <rect key="frame" x="228" y="0.0" width="68" height="31"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QOD-3H-vnx">
+                                            <rect key="frame" x="8" y="8" width="15" height="15"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.49893498419999999" green="0.82076972719999997" blue="0.98041492699999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aO1-9X-6rZ">
                                     <rect key="frame" x="304" y="0.0" width="68" height="31"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vUU-C5-dXw">
+                                            <rect key="frame" x="8" y="8" width="15" height="15"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.71557790040000002" green="0.48648929600000002" blue="0.96867042780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 </view>
                             </subviews>
                         </stackView>
                     </subviews>
-                    <color key="backgroundColor" red="0.39607843139999999" green="0.25882352939999997" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.42950478199999997" green="0.2975562215" blue="0.96475785970000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="Wed-7g-yr0" secondAttribute="trailing" constant="21" id="1i5-kA-v96"/>
                         <constraint firstItem="Wed-7g-yr0" firstAttribute="top" secondItem="duf-rm-NXt" secondAttribute="top" constant="2" id="CpM-2m-ggt"/>

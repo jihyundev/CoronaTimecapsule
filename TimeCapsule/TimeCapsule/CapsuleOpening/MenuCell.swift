@@ -11,7 +11,15 @@ import PagingKit
 class MenuCell: PagingMenuViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     
-    override func awakeFromNib() {
-        
+    override public var isSelected: Bool {
+        didSet {
+            if isSelected {
+                titleLabel.textColor = .white
+                titleLabel.font = .SpoqaHanSansNeo(.bold, size: 16)
+            } else {
+                titleLabel.textColor = UIColor.white.withAlphaComponent(0.3)
+                titleLabel.font = .SpoqaHanSansNeo(.bold, size: 16)
+            }
+        }
     }
 }

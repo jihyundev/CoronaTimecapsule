@@ -14,10 +14,10 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2db-mm-oIQ">
-                    <rect key="frame" x="0.0" y="100" width="299" height="5"/>
+                    <rect key="frame" x="7" y="102.5" width="285" height="2.5"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="5" id="KTt-ls-upQ"/>
+                        <constraint firstAttribute="height" constant="2.5" id="KTt-ls-upQ"/>
                     </constraints>
                 </view>
             </subviews>
@@ -25,8 +25,8 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="2db-mm-oIQ" firstAttribute="bottom" secondItem="nl2-F6-1b1" secondAttribute="bottom" id="IoE-qg-SRF"/>
-                <constraint firstItem="2db-mm-oIQ" firstAttribute="leading" secondItem="nl2-F6-1b1" secondAttribute="leading" id="Y3f-FD-Aoo"/>
-                <constraint firstItem="2db-mm-oIQ" firstAttribute="trailing" secondItem="nl2-F6-1b1" secondAttribute="trailing" id="vyl-9S-exi"/>
+                <constraint firstItem="2db-mm-oIQ" firstAttribute="leading" secondItem="nl2-F6-1b1" secondAttribute="leading" constant="7" id="Y3f-FD-Aoo"/>
+                <constraint firstItem="2db-mm-oIQ" firstAttribute="trailing" secondItem="nl2-F6-1b1" secondAttribute="trailing" constant="-7" id="vyl-9S-exi"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="117.1875" y="-99.375"/>

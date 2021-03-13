@@ -16,12 +16,12 @@ class FinishedListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = #colorLiteral(red: 0.4756628871, green: 0.3672500849, blue: 0.8775171638, alpha: 1)
+        self.view.backgroundColor = #colorLiteral(red: 0.4529297948, green: 0.2904702425, blue: 1, alpha: 1)
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "FinishedListCell", bundle: nil), forCellReuseIdentifier: wishCell.cellID)
         tableView.rowHeight = 80
-        tableView.backgroundColor = #colorLiteral(red: 0.4756628871, green: 0.3672500849, blue: 0.8775171638, alpha: 1)
+        tableView.backgroundColor = #colorLiteral(red: 0.4529297948, green: 0.2904702425, blue: 1, alpha: 1)
     }
 
 }

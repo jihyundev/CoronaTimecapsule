@@ -20,9 +20,9 @@ class MainViewController: UIViewController {
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     
-    var currentItems: Int = 0
+    var currentItems: Int = 21
     var index: Int = 0
-    
+    var marbles: [Int] = []
     lazy var rocketImageView: UIImageView = {
        let view = UIImageView(image: UIImage(named: "rocket"))
         view.frame.size.width = 300
@@ -34,7 +34,7 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        makeGameScene()
+//        makeGameScene()
         backImageView.contentMode = .scaleAspectFill
         prepareRocket()
         setupUI()
@@ -89,6 +89,7 @@ class MainViewController: UIViewController {
         let skView = self.gameView as! SKView
         scene.currentItemCount = currentItems
         scene.index = index
+        scene.marbles = marbles
         
         scene.backgroundColor = .clear
         skView.ignoresSiblingOrder = true
@@ -114,28 +115,44 @@ class MainViewController: UIViewController {
         let headers: HTTPHeaders = ["X-ACCESS-TOKEN": Constant.testToken]
         let parameters = ["marbleColor": "\(index)"]
         NetworkService.getData(type: .marbleList, headers: headers, parameters: parameters) { [weak self] (result: Result<Marbles,APIError>) in
+            guard let self = self else {return}
             switch result {
             case .success(let model):
-                print(model)
+                model.marbleList.forEach {
+                    print($0.marbleID)
+                    self.marbles.append($0.marbleID)
+                }
             case .failure(let error):
-                print(error.localizedDescription)
+                print(#function, error.localizedDescription)
             }
         }
     }
     
     func getAllMarbles() {
         let headers: HTTPHeaders = ["Accept": "application/json",
-            "X-ACCESS-TOKEN": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjEsImlhdCI6MTYxNTU1MTI1MX0.azhpQs7mOZhUBY46A9XOz_xzD18nfX59wqacFcmuqWM"]
+            "X-ACCESS-TOKEN": Constant.testToken]
         NetworkService.getData(type: .marbleList, headers: headers, parameters: nil) { [weak self] (result: Result<Marbles,APIError>) in
+            guard let self = self else {return}
             switch result {
             case .success(let model):
-                print("1")
+                model.marbleList.forEach { self.marbles.append($0.marbleColor) }
+                self.currentItems = self.marbles.count
+                self.makeGameScene()
+                print(self.currentItems)
             case .failure(let error):
-                print(error.localizedDescription)
+                print(#function, error.localizedDescription)
             }
         }
+//        let url = URLType.marbleList.makeURL
+//        AF.request(url, headers: headers).responseJSON { response in
+//            print(response)
+//
+//        }
 
     }
+    
+
+    
     func isCapsuleOpen() {
         let headers: HTTPHeaders = ["Accept": "application/json",
                                     "X-ACCESS-TOKEN": Constant.testToken]

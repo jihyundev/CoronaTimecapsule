@@ -12,13 +12,14 @@ struct Marbles: Codable {
     let marbleColorCount: [MarbleColorCount]
 
     struct MarbleColorCount: Codable {
-        let marbleColor: String
+        let marbleColor: Int
         let marbleCount: Int
     }
 
     struct MarbleList: Codable {
         let marbleID: Int
-        let content, marbleColor: String
+        let content: String
+            let marbleColor: Int
         let wishChecked: Bool
         let createdAt: String
 

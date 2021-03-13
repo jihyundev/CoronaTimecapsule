@@ -20,7 +20,7 @@ struct CapsuleInfo: Codable {
     }
     
     struct MarbleColorCount: Codable {
-        let marbleColor: String
+        let marbleColor: Int
         let marbleCount: Int
     }
 }

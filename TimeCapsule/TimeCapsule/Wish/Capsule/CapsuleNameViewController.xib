@@ -35,9 +35,9 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cn-My-wIZ">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cn-My-wIZ">
                             <rect key="frame" x="256" y="26" width="30" height="30"/>
-                            <state key="normal" title="x"/>
+                            <state key="normal" image="icon_black_delete"/>
                             <connections>
                                 <action selector="exitButtonTapped:" destination="-1" eventType="touchUpInside" id="ovq-6X-P5r"/>
                             </connections>
@@ -112,6 +112,7 @@
         </view>
     </objects>
     <resources>
+        <image name="icon_black_delete" width="30" height="30"/>
         <image name="icon_delete_text" width="30" height="30"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

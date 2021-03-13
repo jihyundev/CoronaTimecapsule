@@ -29,8 +29,9 @@ class LoginViewController: UIViewController {
         
     }
     
-    func setNickname() {
+    func goToNickname(token: String) {
         let vc = NicknameViewController()
+        vc.accessToken = token
         vc.modalPresentationStyle = .overCurrentContext
         self.present(vc, animated: true, completion: nil)
     }

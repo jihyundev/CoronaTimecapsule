@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct Signup: Codable {
+    let code, message: String
+}

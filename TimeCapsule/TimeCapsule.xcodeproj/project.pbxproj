@@ -24,6 +24,7 @@
 		25437B6A25FC424A00F3C8EF /* EndPopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25437B6825FC424A00F3C8EF /* EndPopUpViewController.xib */; };
 		25437B6E25FC425000F3C8EF /* CapsuleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25437B6C25FC425000F3C8EF /* CapsuleInfo.swift */; };
 		25437B6F25FC425000F3C8EF /* Marbles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25437B6D25FC425000F3C8EF /* Marbles.swift */; };
+		25437B7225FC46EC00F3C8EF /* AddMarble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25437B7125FC46EC00F3C8EF /* AddMarble.swift */; };
 		5921F98825FBC7D700D097B4 /* Gaegu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5921F98525FBC7D600D097B4 /* Gaegu-Regular.ttf */; };
 		5921F98925FBC7D700D097B4 /* Gaegu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5921F98625FBC7D600D097B4 /* Gaegu-Bold.ttf */; };
 		5921F98A25FBC7D700D097B4 /* Gaegu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5921F98725FBC7D700D097B4 /* Gaegu-Light.ttf */; };
@@ -92,6 +93,7 @@
 		25437B6825FC424A00F3C8EF /* EndPopUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EndPopUpViewController.xib; sourceTree = "<group>"; };
 		25437B6C25FC425000F3C8EF /* CapsuleInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapsuleInfo.swift; sourceTree = "<group>"; };
 		25437B6D25FC425000F3C8EF /* Marbles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Marbles.swift; sourceTree = "<group>"; };
+		25437B7125FC46EC00F3C8EF /* AddMarble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMarble.swift; sourceTree = "<group>"; };
 		5921F98525FBC7D600D097B4 /* Gaegu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaegu-Regular.ttf"; sourceTree = "<group>"; };
 		5921F98625FBC7D600D097B4 /* Gaegu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaegu-Bold.ttf"; sourceTree = "<group>"; };
 		5921F98725FBC7D700D097B4 /* Gaegu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaegu-Light.ttf"; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 		59E971F125FB0475008A7EF9 /* Wish */ = {
 			isa = PBXGroup;
 			children = (
+				25437B7125FC46EC00F3C8EF /* AddMarble.swift */,
 				2516E83825FB7C7A00ADD135 /* MyPageViewController.swift */,
 				2516E83925FB7C7A00ADD135 /* MyPageViewController.xib */,
 				2520770625FB5DEF004366E4 /* Nickname */,
@@ -588,6 +591,7 @@
 				59E971D825FB003B008A7EF9 /* IndicatorView.swift in Sources */,
 				25437B6F25FC425000F3C8EF /* Marbles.swift in Sources */,
 				59E971E225FB003B008A7EF9 /* KobisKey.swift in Sources */,
+				25437B7225FC46EC00F3C8EF /* AddMarble.swift in Sources */,
 				2516E84525FB8A9400ADD135 /* NetworkService.swift in Sources */,
 				2520770225FB5235004366E4 /* CapsuleNameViewController.swift in Sources */,
 				25437B6E25FC425000F3C8EF /* CapsuleInfo.swift in Sources */,

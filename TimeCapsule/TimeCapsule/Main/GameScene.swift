@@ -24,6 +24,7 @@ class GameScene: SKScene {
     lazy var y: CGFloat = bodySize * 2
     
     override func didMove(to view: SKView) {
+        print(currentItemCount, marbles)
         if currentItemCount>0 {
             for i in 0..<currentItemCount {
                 createTile(count: i, index: marbles[i])
@@ -31,7 +32,6 @@ class GameScene: SKScene {
         }
         
         createWall()
-        print(self.size.width)
         manager.startAccelerometerUpdates()
         manager.accelerometerUpdateInterval = 0.1
         manager.startAccelerometerUpdates(to: .main) { data, error in

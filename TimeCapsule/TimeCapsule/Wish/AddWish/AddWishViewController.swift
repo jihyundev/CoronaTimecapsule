@@ -22,6 +22,7 @@ class AddWishViewController: UIViewController{
     
     @IBOutlet weak var openImageView: UIImageView!
     
+    var delegate: ReloadDelegate?
     var tagID: Int = 0
     lazy var tagView = UIView(frame: CGRect(x: tagButton.frame.origin.x, y: tagButton.frame.origin.y, width: 61, height: 128))
     
@@ -39,9 +40,11 @@ class AddWishViewController: UIViewController{
     @IBAction func completionButtonTapped(_ sender: Any) {
         
         //서버로 데이터 전송
-        addMarbles(content: "test", index: 1)
+        guard let content = wishTextView.text else { return }
+        addMarbles(content: content, index: tagID)
         //dismiss
-        self.dismiss(animated: true, completion: nil)
+//        delegate?.reloadView()
+//        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func exitButtonTapped(_ sender: Any) {
@@ -68,9 +71,6 @@ class AddWishViewController: UIViewController{
         tagBaseCircleView.layer.cornerRadius = 9
         tagBaseCircleView.borderWidth = 3
         tagBaseCircleView.borderColor = .black
-        
-        
-
     }
     
 
@@ -119,18 +119,24 @@ class AddWishViewController: UIViewController{
         let params = ["content": content,
                       "marbleColor": "\(index)"]
 //        NetworkService.postData(type: .addMarble, headers: headers, parameters: params) { [weak self] (result: Result<AddMarble,APIError>) in
+//            guard let self = self else { return }
 //            switch result {
 //            case .success(let model):
-//                print(model)
+//
+//                self.delegate?.reloadView()
+//                self.dismiss(animated: true, completion: nil)
 //            case .failure(let error):
 //                print(error.localizedDescription)
 //            }
 //        }
+        
         let url = URLType.addMarble.makeURL
         AF.request(url, method: .post, parameters: params, encoder: JSONParameterEncoder.default, headers: headers)
-            .response { response in
+            .response { [weak self] response in
                 print(response)
-              
+                guard let self = self else { return }
+                self.delegate?.reloadView()
+                self.dismiss(animated: true, completion: nil)
             }
             
     }

@@ -37,8 +37,8 @@ class MainViewController: UIViewController {
     
     lazy var rocketBottomImageView: UIImageView = {
        let view = UIImageView(image: UIImage(named: "rocket_bottom"))
-        view.frame.size.width = 300
-        view.frame.size.height = 745
+        view.frame.size.width = 213.55
+        view.frame.size.height = 205.51
         view.contentMode = .scaleToFill
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -118,6 +118,12 @@ class MainViewController: UIViewController {
         rocketImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         rocketImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 30).isActive = true
         print(rocketImageView.frame.size)
+        rocketImageView.layer.zPosition = 2
+        gameView.layer.zPosition = 1
+        view.addSubview(rocketBottomImageView)
+        rocketBottomImageView.leadingAnchor.constraint(equalTo: rocketImageView.leadingAnchor, constant: 47.85).isActive = true
+        rocketBottomImageView.bottomAnchor.constraint(equalTo: rocketImageView.bottomAnchor, constant: -266.42).isActive = true
+        rocketBottomImageView.layer.zPosition = 0
     }
     
     func makeGameScene() {
@@ -141,7 +147,7 @@ class MainViewController: UIViewController {
             case .success(let model):
                 print(model)
                 if model.capsuleName == "" {
-                    self.nameLabel.text = "우주선 이름"
+                    self.nameLabel.text = "로켓 이름"
                 } else {
                     self.nameLabel.text = model.capsuleName
                 }

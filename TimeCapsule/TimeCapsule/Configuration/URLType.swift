@@ -32,7 +32,7 @@ enum URLType {
             return "\(baseURL)/v1/capsules/open"
             
         case .marbleList:
-            return "\(baseURL)/v1/marbles"
+            return "\(baseURL)/v1/marbles/no-flag"
         case .addMarble:
             return "\(baseURL)/v1/marbles"
         case .marbleCheck(let id):

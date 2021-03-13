@@ -23,7 +23,7 @@ class CapsuleNameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        nameTextView.delegate = self
         setupUI()
     }
     
@@ -38,6 +38,10 @@ class CapsuleNameViewController: UIViewController {
         }
         
     }
+    @IBAction func deleteButtonTapped(_ sender: Any) {
+        nameTextView.text = ""
+    }
+    
     func setupUI() {
         containerView.layer.cornerRadius = 30
         containerView.borderWidth = 5

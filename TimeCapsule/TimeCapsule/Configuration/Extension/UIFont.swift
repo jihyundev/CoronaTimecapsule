@@ -35,4 +35,24 @@ extension UIFont {
     static func NotoSans(_ type: NotoSansType, size: CGFloat) -> UIFont {
         return UIFont(name: "NotoSansCJKkr-\(type.rawValue)", size: size)!
     }
+    
+    public enum GaeguType: String {
+        case bold = "Bold"
+        case light = "Light"
+        case regular = "Regular"
+    }
+    static func Gaegu(_ type: GaeguType, size: CGFloat) -> UIFont {
+        return UIFont(name: "Gaegu-\(type.rawValue)", size: size)!
+    }
+    
+    public enum SpoqaHanSansNeoType: String {
+        case bold = "Bold"
+        case light = "Light"
+        case thin = "Thin"
+        case medium = "Medium"
+        case regular = "Regular"
+    }
+    static func SpoqaHanSansNeo(_ type: SpoqaHanSansNeoType, size: CGFloat) -> UIFont {
+        return UIFont(name: "Spoqa Han Sans Neo \(type.rawValue)", size: size)!
+    }
 }

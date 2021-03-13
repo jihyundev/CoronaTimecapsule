@@ -20,6 +20,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     
+    @IBOutlet weak var lockImageView: UIImageView!
     var currentItems: Int = 21
     var index: Int = 0
     var marbles: [Int] = []
@@ -45,7 +46,7 @@ class MainViewController: UIViewController {
         super.viewWillAppear(animated)
         getCapsule()
         isCapsuleOpen()
-        print(#function)
+        
     }
     @IBAction func editCapsuleButtonTapped(_ sender: Any) {
         let nextVC = CapsuleNameViewController()
@@ -81,9 +82,12 @@ class MainViewController: UIViewController {
     }
     
     func setupUI() {
-        listButton.layer.cornerRadius = 20
+        listButton.layer.cornerRadius = 21
         listButton.borderWidth = 3
         listButton.borderColor = UIColor.init(hex: 0x76FF95)
+        
+        lockImageView.layer.cornerRadius = 21
+        lockImageView.backgroundColor = UIColor.init(hex: 0xB4CBF2).withAlphaComponent(0.5)
         
         countLabel.layer.cornerRadius = 13.5
         countLabel.layer.masksToBounds = true
@@ -178,12 +182,17 @@ class MainViewController: UIViewController {
                                     "X-ACCESS-TOKEN": Constant.testToken]
         let url = URLType.capsuleOpen.makeURL
         
-        AF.request(url, headers: headers).responseJSON { response in
+        AF.request(url, headers: headers).responseJSON { [weak self] response in
+            guard let self = self else { return }
             if let data = response.data {
                 if let result = String(data: data, encoding: .utf8), result == "true" {
                     print("코로나 종식")
+                    self.listButton.isEnabled = true
+                    self.lockImageView.isHidden = true
                 } else {
                     print("코로나 중")
+                    self.listButton.isEnabled = false
+                    self.lockImageView.isHidden = false
                 }
             }
         }
@@ -197,10 +206,12 @@ extension MainViewController: ReloadDelegate {
         let skView = self.gameView as! SKView
         skView.scene?.removeFromParent()
         getAllMarbles()
+        isCapsuleOpen()
     }
   
     func reloadName() {
         getCapsule()
+        isCapsuleOpen()
     }
      
 }

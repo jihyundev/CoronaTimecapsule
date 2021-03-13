@@ -49,6 +49,7 @@ class MainViewController: UIViewController {
     }
     @IBAction func editCapsuleButtonTapped(_ sender: Any) {
         let nextVC = CapsuleNameViewController()
+        nextVC.delegate = self
         nextVC.modalPresentationStyle = .overCurrentContext
         present(nextVC, animated: true, completion: nil)
     }
@@ -156,6 +157,7 @@ class MainViewController: UIViewController {
                     self.marbles.append($0.marbleColor) }
                 self.currentItems = self.marbles.count
                 self.makeGameScene()
+                self.countLabel.text = ("\(self.marbles.count)/21")
                 print(self.currentItems)
             case .failure(let error):
                 print(#function, error.localizedDescription)
@@ -197,9 +199,13 @@ extension MainViewController: ReloadDelegate {
         getAllMarbles()
     }
   
+    func reloadName() {
+        getCapsule()
+    }
      
 }
 
 protocol ReloadDelegate {
     func reloadView()
+    func reloadName()
 }

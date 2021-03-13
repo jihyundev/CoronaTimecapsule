@@ -16,10 +16,10 @@ class CapsuleNameViewController: UIViewController {
     @IBOutlet weak var completionButton: UIButton!
     @IBOutlet weak var textCountLabel: UILabel!
     @IBOutlet weak var deleteButton: UIButton!
-    @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var containerView: UIView!
     
-    var name: String = "test"
+    var name: String = ""
+    var delegate: ReloadDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,10 @@ class CapsuleNameViewController: UIViewController {
     }
     @IBAction func completionButtonTapped(_ sender: Any) {
         //닉네임 변경하기
-        editName(content: name)
+        if let text = nameTextView.text {
+            print(#function)
+            editcapsuleName(content: text)
+        }
         
     }
     func setupUI() {
@@ -47,17 +50,17 @@ class CapsuleNameViewController: UIViewController {
         completionButton.setTitleColor(.white, for: .selected)
         nameTextView.layer.cornerRadius = 9
         nameTextView.backgroundColor = UIColor.mainGrey
-        welcomeLabel.text = "\(name)님 환영합니다!"
-        welcomeLabel.textColor = .white
+        
     }
 
-    func editName(content: String) {
+    func editcapsuleName(content: String) {
         let url = URLType.capsuleName.makeURL
         let headers: HTTPHeaders = ["X-ACCESS-TOKEN": Constant.testToken]
-        let params = ["capulseName": content]
+        let params = ["capsuleName": content]
         AF.request(url, method: .patch, parameters: params, encoder: JSONParameterEncoder.default, headers: headers)
-            .response { response in
-                print(response)
+            .response { [weak self] response in
+                guard let self = self else { return }
+                self.delegate?.reloadName()
                 self.dismiss(animated: true, completion: nil)
             }
     }

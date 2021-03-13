@@ -8,6 +8,9 @@
 import UIKit
 
 class NicknameViewController: UIViewController {
+    
+    let dataManager = UserDataManager()
+    var accessToken: String?
 
     @IBOutlet weak var titleLabel: UILabel!
     
@@ -52,12 +55,14 @@ class NicknameViewController: UIViewController {
     }
     
     @IBAction func completionButtonTapped(_ sender: Any) {
+        dataManager.join(nickname: nameTextView.text, token: accessToken!, viewController: self)
+        /*
         guard let pvc = self.presentingViewController else { return }
         let nextVC = MainViewController()
         nextVC.modalPresentationStyle = .overCurrentContext
         self.dismiss(animated: true) {
             pvc.present(nextVC, animated: true, completion: nil)
-        }
+        }*/
     }
     @IBAction func deleteButtonTapped(_ sender: Any) {
         nameTextView.text = ""
@@ -75,6 +80,15 @@ class NicknameViewController: UIViewController {
         completionButton.setTitleColor(.white, for: .selected)
         nameTextView.layer.cornerRadius = 9
         nameTextView.backgroundColor = UIColor.mainGrey
+    }
+    
+    func didRetreiveData() {
+        guard let pvc = self.presentingViewController else { return }
+        let nextVC = MainViewController()
+        nextVC.modalPresentationStyle = .overCurrentContext
+        self.dismiss(animated: true) {
+            pvc.present(nextVC, animated: true, completion: nil)
+        }
     }
     
 

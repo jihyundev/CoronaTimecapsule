@@ -25,6 +25,8 @@ class UserDataManager {
                     
                     // do something
                     _ = oauthToken
+                    let accessToken = oauthToken?.accessToken
+                    self.verifyUser(accessToken: accessToken!, viewController: viewController)
                 }
             }
         } else {
@@ -48,7 +50,7 @@ class UserDataManager {
                             // do something
                             _ = user
                             if user?.id != nil {
-                                self.login(accessToken: accessToken!)
+                                self.verifyUser(accessToken: accessToken!, viewController: viewController)
                             }
                         }
                     }
@@ -58,18 +60,84 @@ class UserDataManager {
     }
     
     // 로그인 (JWT 토큰 발급)
-    func login(accessToken: String) {
-        
+    func login(accessToken: String, viewController: LoginViewController) {
+        let url = "https://www.vivi-pr.shop/v1/users/login"
+        let headers: HTTPHeaders = ["social-token": accessToken]
+        AF.request(url, method: .post, headers: headers).validate().responseString { response in
+            switch response.result {
+            case .success(let response):
+                let jwtToken = response
+                let ud = UserDefaults.standard
+                ud.setValue(jwtToken, forKey: "loginJWTToken")
+                // 메인으로 넘어가기
+                viewController.userExisted()
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
     
     // 가입 회원 여부 검사
-    func verifyUser(accessToken: String) {
-        
+    func verifyUser(accessToken: String, viewController: LoginViewController) {
+        let url = "https://www.vivi-pr.shop/v1/users/exists"
+        let headers: HTTPHeaders = ["social-token": accessToken]
+        AF.request(url, method: .get, headers: headers).validate().responseString { response in
+            switch response.result {
+            case .success(let response):
+                if response == "true" {
+                    // 이미 가입된 회원
+                    print("이미 가입된 회원입니다. ")
+                    self.login(accessToken: accessToken, viewController: viewController)
+                    
+                } else {
+                    // 회원가입 진행 전 닉네임 설정
+                    viewController.goToNickname(token: accessToken)
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    // 닉네임 수정
+    func setNickname(nickname: String, viewController: NicknameViewController) {
+        let ud = UserDefaults.standard
+        let token = ud.string(forKey: "loginJWTToken")!
+        let url = "https://www.vivi-pr.shop/v1/users/nickname"
+        let headers: HTTPHeaders = ["X-ACCESS-TOKEN": token, "nicknameDto": nickname]
+        AF.request(url, method: .patch, headers: headers).validate().responseString { response in
+            switch response.result {
+            case .success( _):
+                print("닉네임 수정 성공")
+                viewController.didRetreiveData()
+                //self.join(nickname: nickname, viewController: viewController)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
     
     // 회원가입
-    func join(accessToken: String) {
-        
+    func join(nickname: String, token: String, viewController: NicknameViewController) {
+        let ud = UserDefaults.standard
+        let token = ud.string(forKey: "loginJWTToken")!
+        let url = "https://www.vivi-pr.shop/v1/users/signUp"
+        let parameters: [String: Any] = [
+            "nickname" : nickname
+        ]
+        let headers: HTTPHeaders = ["social-token": token]
+        AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).validate().responseString { response in
+            switch response.result {
+            case .success(let response):
+                let jwtToken = response
+                let ud = UserDefaults.standard
+                ud.setValue(jwtToken, forKey: "loginJWTToken")
+                // 메인으로 넘어가기
+                viewController.didRetreiveData()
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
     
     

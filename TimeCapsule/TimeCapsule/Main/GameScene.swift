@@ -17,20 +17,21 @@ class GameScene: SKScene {
     
     var index: Int = 0
     var currentItemCount: Int = 0
+    var marbles: [Int] = []
     let manager = CMMotionManager()
     let bodySize: CGFloat = 15
     lazy var x: CGFloat = (-bodySize * 2)
     lazy var y: CGFloat = bodySize * 2
     
     override func didMove(to view: SKView) {
+        print(currentItemCount, marbles)
         if currentItemCount>0 {
             for i in 0..<currentItemCount {
-                createTile(count: i, index: index)
+                createTile(count: i, index: marbles[i])
             }
         }
         
         createWall()
-        print(self.size.width)
         manager.startAccelerometerUpdates()
         manager.accelerometerUpdateInterval = 0.1
         manager.startAccelerometerUpdates(to: .main) { data, error in
@@ -51,7 +52,7 @@ class GameScene: SKScene {
             y += (bodySize * 2)
         }
 
-        let tile = SKSpriteNode(imageNamed: "dol_1")
+        let tile = SKSpriteNode(imageNamed: "dol_\(index+1)")
         tile.position = .init(x: x, y: y)
         tile.physicsBody = SKPhysicsBody(circleOfRadius: bodySize)
         tile.physicsBody?.isDynamic = true

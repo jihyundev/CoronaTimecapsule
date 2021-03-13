@@ -50,7 +50,8 @@
                         <constraint firstAttribute="height" constant="52" id="3eH-aY-PWb"/>
                         <constraint firstAttribute="width" constant="101" id="hUV-TB-nZ2"/>
                     </constraints>
-                    <state key="normal" title="추가" image="small_dol_1">
+                    <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="20"/>
+                    <state key="normal" title="추가 " image="small_dol_3">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
@@ -137,7 +138,7 @@
         <image name="icon_Lock" width="30" height="30"/>
         <image name="icon_revise" width="30" height="30"/>
         <image name="icon_rocket" width="30" height="30"/>
-        <image name="small_dol_1" width="40" height="40"/>
+        <image name="small_dol_3" width="50" height="50"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

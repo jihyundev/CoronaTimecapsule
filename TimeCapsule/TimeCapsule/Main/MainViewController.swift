@@ -35,6 +35,15 @@ class MainViewController: UIViewController {
         return view
     }()
     
+    lazy var rocketBottomImageView: UIImageView = {
+       let view = UIImageView(image: UIImage(named: "rocket_bottom"))
+        view.frame.size.width = 300
+        view.frame.size.height = 745
+        view.contentMode = .scaleToFill
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        makeGameScene()
@@ -87,18 +96,21 @@ class MainViewController: UIViewController {
         listButton.layer.cornerRadius = 21
         listButton.borderWidth = 3
         listButton.borderColor = UIColor.init(hex: 0x76FF95)
-        
+        listButton.layer.zPosition = 9
         lockImageView.layer.cornerRadius = 21
         lockImageView.backgroundColor = UIColor.init(hex: 0xB4CBF2).withAlphaComponent(0.5)
-        
+        lockImageView.layer.zPosition = 10
         countLabel.layer.cornerRadius = 13.5
         countLabel.layer.masksToBounds = true
         countLabel.backgroundColor = UIColor.init(hex: 0xB4CBF2).withAlphaComponent(0.5)
+        countLabel.layer.zPosition = 9
         
         addButton.layer.cornerRadius = 26
         addButton.layer.zPosition = 10
         
         nameLabel.layer.zPosition = 9
+        editCapsuleNameButton.layer.zPosition = 9
+        
     }
     func prepareRocket() {
         view.addSubview(rocketImageView)
@@ -193,7 +205,7 @@ class MainViewController: UIViewController {
                     print("코로나 종식")
                     self.listButton.isEnabled = true
                     self.lockImageView.isHidden = true
-                    
+                    self.addButton.isHidden = true
                     let nextVC = EndPopUpViewController()
                     nextVC.delegate = self
                     nextVC.modalPresentationStyle = .overCurrentContext
@@ -202,6 +214,7 @@ class MainViewController: UIViewController {
                     print("코로나 중")
                     self.listButton.isEnabled = false
                     self.lockImageView.isHidden = false
+                    self.addButton.isHidden = false
                 }
             }
         }
@@ -228,7 +241,7 @@ extension MainViewController: ReloadDelegate {
             print(self.rocketImageView.frame.origin.y, self.gameView.frame.origin.y)
             self.rocketImageView.frame.origin = CGPoint(x: self.rocketImageView.frame.origin.x, y: -1100)
             self.gameView.frame.origin = CGPoint(x: self.gameView.frame.origin.x, y: -831)
-            
+
         } completion: { result in
             print(result.description)
         }

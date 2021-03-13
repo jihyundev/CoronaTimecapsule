@@ -77,6 +77,7 @@ class MainViewController: UIViewController {
     @IBAction func addButtonTapped(_ sender: Any) {
         let nextVC = AddWishViewController()
         nextVC.delegate = self
+        nextVC.count = currentItems
         nextVC.modalPresentationStyle = .overCurrentContext
 //        present(nextVC, animated: true, completion: nil)
         present(nextVC, animated: true) { [weak self] in
@@ -139,7 +140,12 @@ class MainViewController: UIViewController {
             switch result {
             case .success(let model):
                 print(model)
-                self.nameLabel.text = model.capsuleName
+                if model.capsuleName == "" {
+                    self.nameLabel.text = "우주선 이름"
+                } else {
+                    self.nameLabel.text = model.capsuleName
+                }
+                
             case .failure(let error):
                 print(error.localizedDescription)
             }
@@ -177,7 +183,7 @@ class MainViewController: UIViewController {
                     self.marbles.append($0.marbleColor) }
                 self.currentItems = self.marbles.count
                 self.makeGameScene()
-                self.countLabel.text = ("\(self.marbles.count)/21")
+                self.countLabel.text = ("\(self.marbles.count) / 21")
                 print(self.currentItems)
             case .failure(let error):
                 print(#function, error.localizedDescription)

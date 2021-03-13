@@ -25,6 +25,7 @@ class AddWishViewController: UIViewController{
     @IBOutlet weak var centerY: NSLayoutConstraint!
     var delegate: ReloadDelegate?
     var tagID: Int = 0
+    var count: Int = 0
     lazy var tagView = UIView(frame: CGRect(x: tagButton.frame.origin.x, y: tagButton.frame.origin.y, width: 61, height: 128))
     
     override func viewDidLoad() {
@@ -76,6 +77,8 @@ class AddWishViewController: UIViewController{
     }
     
     func setupUI() {
+        wishTextView.contentInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        textCountLabel.text = "\(count+1) / 21"
         containerView.layer.cornerRadius = 30
         containerView.borderWidth = 5
         containerView.borderColor = .black

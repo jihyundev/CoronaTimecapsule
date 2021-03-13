@@ -9,11 +9,10 @@ import UIKit
 
 class EndPopUpViewController: UIViewController {
 
-    
-    
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var completionButton: UIButton!
     
+    var delegate: ReloadDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +20,15 @@ class EndPopUpViewController: UIViewController {
         setupUI()
     }
     @IBAction func exitButtonTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func completionButtonTapped(_ sender: Any) {
+        dismiss(animated: true) { [weak self] in
+            guard let self = self else { return }
+            //코로나 종식 퍼모먼스 레쓰기릿
+            self.delegate?.endGame()
+        }
     }
     
     func setupUI() {

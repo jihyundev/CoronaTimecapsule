@@ -16,6 +16,8 @@ enum URLType {
     case addMarble
     case marbleCheck(Int)
     
+    case nickName
+    
     var baseURL: String {
         return "https://www.vivi-pr.shop"
     }
@@ -35,6 +37,9 @@ enum URLType {
             return "\(baseURL)/v1/marbles"
         case .marbleCheck(let id):
             return "\(baseURL)/v1/marbles/\(id)/check"
+            
+        case .nickName:
+            return "\(baseURL)/v1/users/nickname"
     
         }
     }

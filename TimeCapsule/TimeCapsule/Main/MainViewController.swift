@@ -20,6 +20,8 @@ class MainViewController: UIViewController {
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     
+    @IBOutlet weak var capsuleConstraint: NSLayoutConstraint!
+    
     @IBOutlet weak var lockImageView: UIImageView!
     var currentItems: Int = 21
     var index: Int = 0
@@ -95,6 +97,8 @@ class MainViewController: UIViewController {
         
         addButton.layer.cornerRadius = 26
         addButton.layer.zPosition = 10
+        
+        nameLabel.layer.zPosition = 9
     }
     func prepareRocket() {
         view.addSubview(rocketImageView)
@@ -130,23 +134,23 @@ class MainViewController: UIViewController {
         }
     }
     
-    func getMarbles(index: Int) {
-        let headers: HTTPHeaders = ["X-ACCESS-TOKEN": Constant.testToken]
-        let parameters = ["marbleColor": "\(index)"]
-        NetworkService.getData(type: .marbleList, headers: headers, parameters: parameters) { [weak self] (result: Result<Marbles,APIError>) in
-            guard let self = self else {return}
-            switch result {
-            case .success(let model):
-                self.marbles = []
-                model.marbleList.forEach {
-                    print($0.marbleID)
-                    self.marbles.append($0.marbleID)
-                }
-            case .failure(let error):
-                print(#function, error.localizedDescription)
-            }
-        }
-    }
+//    func getMarbles(index: Int) {
+//        let headers: HTTPHeaders = ["X-ACCESS-TOKEN": Constant.testToken]
+//        let parameters = ["marbleColor": "\(index)"]
+//        NetworkService.getData(type: .marbleList, headers: headers, parameters: parameters) { [weak self] (result: Result<Marbles,APIError>) in
+//            guard let self = self else {return}
+//            switch result {
+//            case .success(let model):
+//                self.marbles = []
+//                model.marbleList.forEach {
+//                    print($0.marbleID)
+//                    self.marbles.append($0.marbleID)
+//                }
+//            case .failure(let error):
+//                print(#function, error.localizedDescription)
+//            }
+//        }
+//    }
     
     func getAllMarbles() {
         print(#function)
@@ -189,6 +193,11 @@ class MainViewController: UIViewController {
                     print("코로나 종식")
                     self.listButton.isEnabled = true
                     self.lockImageView.isHidden = true
+                    
+                    let nextVC = EndPopUpViewController()
+                    nextVC.delegate = self
+                    nextVC.modalPresentationStyle = .overCurrentContext
+                    self.present(nextVC, animated: true, completion: nil)
                 } else {
                     print("코로나 중")
                     self.listButton.isEnabled = false
@@ -196,7 +205,6 @@ class MainViewController: UIViewController {
                 }
             }
         }
-        
     }
 
 }
@@ -214,9 +222,22 @@ extension MainViewController: ReloadDelegate {
         isCapsuleOpen()
     }
      
+    func endGame() {
+        
+        UIView.animate(withDuration: 5, delay: 0, options: .curveEaseIn) {
+            print(self.rocketImageView.frame.origin.y, self.gameView.frame.origin.y)
+            self.rocketImageView.frame.origin = CGPoint(x: self.rocketImageView.frame.origin.x, y: -1100)
+            self.gameView.frame.origin = CGPoint(x: self.gameView.frame.origin.x, y: -831)
+            
+        } completion: { result in
+            print(result.description)
+        }
+
+    }
 }
 
 protocol ReloadDelegate {
     func reloadView()
     func reloadName()
+    func endGame()
 }

@@ -2,6 +2,7 @@
 
 > 타임캡슐 형식의 위시리스트 앱
 > 
+<img width="800" alt="스크린샷 2021-04-13 오후 11 46 01" src="https://user-images.githubusercontent.com/78068968/114572520-85553e00-9cb2-11eb-9686-fb139241798d.png">
 
 ## Features
 + 로그인: 카카오 계정으로 로그인 후 + 닉네임 입력

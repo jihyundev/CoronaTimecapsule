@@ -11,16 +11,23 @@ import KakaoSDKAuth
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    let ud = UserDefaults.standard
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        
         guard let scene = (scene as? UIWindowScene) else { return }
-        self.window = UIWindow(windowScene: scene)
-        window?.rootViewController = LoginViewController()
-        window?.makeKeyAndVisible()
+        if ud.string(forKey: "loginJWTToken") != nil {
+            // jwt 토큰이 있을 경우 자동로그인 후 메인으로 이동
+            self.window = UIWindow(windowScene: scene)
+            window?.rootViewController = MainViewController()
+            window?.makeKeyAndVisible()
+        } else {
+            // 로그인 처리가 필요한 경우
+            self.window = UIWindow(windowScene: scene)
+            window?.rootViewController = LoginViewController()
+            window?.makeKeyAndVisible()
+        }
+        
     }
     
     func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {

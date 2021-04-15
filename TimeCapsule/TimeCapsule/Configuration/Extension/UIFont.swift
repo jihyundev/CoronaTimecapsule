@@ -48,11 +48,12 @@ extension UIFont {
     public enum SpoqaHanSansNeoType: String {
         case bold = "Bold"
         case light = "Light"
-        case thin = "Thin"
         case medium = "Medium"
         case regular = "Regular"
+        case thin = "Thin"
+        
     }
     static func SpoqaHanSansNeo(_ type: SpoqaHanSansNeoType, size: CGFloat) -> UIFont {
-        return UIFont(name: "Spoqa Han Sans Neo \(type.rawValue)", size: size)!
+        return UIFont(name: "Spoqa Han Sans Neo \(type.rawValue)", size: size) ?? UIFont(name: "Spoqa Han Sans Neo Medium", size: 16)!
     }
 }

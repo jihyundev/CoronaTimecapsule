@@ -13,7 +13,8 @@ class WishlistDataManager {
     let ud = UserDefaults.standard
     
     func getMarbles(viewController: WishlistViewController) {
-        let url = "https://www.vivi-pr.shop/v1/marbles"
+        //let url = "https://www.vivi-pr.shop/v1/marbles"
+        let url = Constant.BASE_URL + "marbles"
         let token = ud.string(forKey: "loginJWTToken")!
         let headers: HTTPHeaders = ["X-ACCESS-TOKEN": token]
         AF.request(url, method: .get, headers: headers).validate().responseDecodable(of: WishList.self) {
@@ -31,7 +32,8 @@ class WishlistDataManager {
     }
     
     func getFinishedMarbles(viewController: FinishedListViewController) {
-        let url = "https://www.vivi-pr.shop/v1/marbles/checked"
+        //let url = "https://www.vivi-pr.shop/v1/marbles/checked"
+        let url = Constant.BASE_URL + "marbles/checked"
         let token = ud.string(forKey: "loginJWTToken")!
         let headers: HTTPHeaders = ["X-ACCESS-TOKEN": token]
         AF.request(url, method: .get, headers: headers).validate().responseDecodable(of: [MarbleList].self) {

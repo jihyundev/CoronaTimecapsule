@@ -2,19 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Spoqa Han Sans Neo Thin.otf</string>
-		<string>Spoqa Han Sans Neo Regular.otf</string>
-		<string>Spoqa Han Sans Neo Medium.otf</string>
-		<string>Spoqa Han Sans Neo Light.otf</string>
-		<string>Spoqa Han Sans Neo Bold.otf</string>
-		<string>Gaegu-Regular.ttf</string>
-		<string>Gaegu-Light.ttf</string>
-		<string>Gaegu-Bold.ttf</string>
-	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>ko_KR</string>
+	<key>CFBundleDisplayName</key>
+	<string>WishPlanet</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -22,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>$(PRODUCT_NAME)</string>
+	<string>WishPlanet</string>
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
@@ -42,6 +33,17 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Spoqa Han Sans Neo Thin.otf</string>
+		<string>Spoqa Han Sans Neo Regular.otf</string>
+		<string>Spoqa Han Sans Neo Medium.otf</string>
+		<string>Spoqa Han Sans Neo Light.otf</string>
+		<string>Spoqa Han Sans Neo Bold.otf</string>
+		<string>Gaegu-Regular.ttf</string>
+		<string>Gaegu-Light.ttf</string>
+		<string>Gaegu-Bold.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

@@ -19,7 +19,7 @@ enum URLType {
     case nickName
     
     var baseURL: String {
-        return "https://www.vivi-pr.shop"
+        return "http://3.35.129.158"
     }
     
     var makeURL: String {

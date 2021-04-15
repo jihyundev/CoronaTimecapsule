@@ -58,28 +58,10 @@ class UserDataManager {
             }
         }
     }
-    
-    // 로그인 (JWT 토큰 발급)
-    func login(accessToken: String, viewController: LoginViewController) {
-        let url = "https://www.vivi-pr.shop/v1/users/login"
-        let headers: HTTPHeaders = ["social-token": accessToken]
-        AF.request(url, method: .post, headers: headers).validate().responseString { response in
-            switch response.result {
-            case .success(let response):
-                let jwtToken = response
-                let ud = UserDefaults.standard
-                ud.setValue(jwtToken, forKey: "loginJWTToken")
-                // 메인으로 넘어가기
-                viewController.userExisted()
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
-    }
-    
     // 가입 회원 여부 검사
     func verifyUser(accessToken: String, viewController: LoginViewController) {
-        let url = "https://www.vivi-pr.shop/v1/users/exists"
+        print("verifyUser() called")
+        let url = Constant.BASE_URL + "users/exists"
         let headers: HTTPHeaders = ["social-token": accessToken]
         AF.request(url, method: .get, headers: headers).validate().responseString { response in
             switch response.result {
@@ -99,11 +81,33 @@ class UserDataManager {
         }
     }
     
+    // 로그인 (JWT 토큰 발급)
+    func login(accessToken: String, viewController: LoginViewController) {
+        print("login() called")
+        //let url = "https://www.vivi-pr.shop/v1/users/login"
+        let url = Constant.BASE_URL + "users/login"
+        let headers: HTTPHeaders = ["social-token": accessToken]
+        AF.request(url, method: .post, headers: headers).validate().responseString { response in
+            switch response.result {
+            case .success(let response):
+                let jwtToken = response
+                print("token: \(jwtToken)")
+                let ud = UserDefaults.standard
+                ud.setValue(jwtToken, forKey: "loginJWTToken")
+                // 메인으로 넘어가기
+                viewController.userExisted()
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
     // 닉네임 수정
     func setNickname(nickname: String, viewController: NicknameViewController) {
         let ud = UserDefaults.standard
         let token = ud.string(forKey: "loginJWTToken")!
-        let url = "https://www.vivi-pr.shop/v1/users/nickname"
+        //let url = "https://www.vivi-pr.shop/v1/users/nickname"
+        let url = Constant.BASE_URL + "users/nickname"
         let headers: HTTPHeaders = ["X-ACCESS-TOKEN": token, "nicknameDto": nickname]
         AF.request(url, method: .patch, headers: headers).validate().responseString { response in
             switch response.result {
@@ -119,7 +123,8 @@ class UserDataManager {
     
     // 회원가입
     func join(nickname: String, token: String, viewController: NicknameViewController) {
-        let url = "https://www.vivi-pr.shop/v1/users/signUp"
+        //let url = "https://www.vivi-pr.shop/v1/users/signUp"
+        let url = Constant.BASE_URL + "users/signUp"
         let parameters: [String: Any] = [
             "nickname" : nickname
         ]

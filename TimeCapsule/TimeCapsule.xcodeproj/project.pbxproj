@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2516E83A25FB7C7A00ADD135 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2516E83825FB7C7A00ADD135 /* MyPageViewController.swift */; };
-		2516E83B25FB7C7A00ADD135 /* MyPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2516E83925FB7C7A00ADD135 /* MyPageViewController.xib */; };
 		2516E83F25FB855200ADD135 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2516E83E25FB855200ADD135 /* GameScene.swift */; };
 		2516E84225FB890E00ADD135 /* URLType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2516E84125FB890E00ADD135 /* URLType.swift */; };
 		2516E84525FB8A9400ADD135 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2516E84425FB8A9400ADD135 /* NetworkService.swift */; };
@@ -24,7 +22,6 @@
 		25437B6A25FC424A00F3C8EF /* EndPopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25437B6825FC424A00F3C8EF /* EndPopUpViewController.xib */; };
 		25437B6E25FC425000F3C8EF /* CapsuleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25437B6C25FC425000F3C8EF /* CapsuleInfo.swift */; };
 		25437B6F25FC425000F3C8EF /* Marbles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25437B6D25FC425000F3C8EF /* Marbles.swift */; };
-		25437B7225FC46EC00F3C8EF /* AddMarble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25437B7125FC46EC00F3C8EF /* AddMarble.swift */; };
 		5921F98825FBC7D700D097B4 /* Gaegu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5921F98525FBC7D600D097B4 /* Gaegu-Regular.ttf */; };
 		5921F98925FBC7D700D097B4 /* Gaegu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5921F98625FBC7D600D097B4 /* Gaegu-Bold.ttf */; };
 		5921F98A25FBC7D700D097B4 /* Gaegu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5921F98725FBC7D700D097B4 /* Gaegu-Light.ttf */; };
@@ -34,6 +31,10 @@
 		5921F99625FBC82000D097B4 /* Spoqa Han Sans Neo Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5921F99525FBC82000D097B4 /* Spoqa Han Sans Neo Regular.otf */; };
 		5921F99925FBC82800D097B4 /* Spoqa Han Sans Neo Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5921F99825FBC82800D097B4 /* Spoqa Han Sans Neo Thin.otf */; };
 		59399AB925FC365E006CBE10 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59399AB825FC365E006CBE10 /* MenuCell.swift */; };
+		59BD6035262C6CF3009B4DE6 /* CompletedRocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BD6033262C6CF3009B4DE6 /* CompletedRocketViewController.swift */; };
+		59BD6036262C6CF3009B4DE6 /* CompletedRocketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59BD6034262C6CF3009B4DE6 /* CompletedRocketViewController.xib */; };
+		59BD6042262C6D06009B4DE6 /* CompletedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BD6040262C6D06009B4DE6 /* CompletedListViewController.swift */; };
+		59BD6043262C6D06009B4DE6 /* CompletedListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59BD6041262C6D06009B4DE6 /* CompletedListViewController.xib */; };
 		59D5474325FBB5FF004763B4 /* FinishedListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D5474125FBB5FF004763B4 /* FinishedListCell.swift */; };
 		59D5474425FBB5FF004763B4 /* FinishedListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59D5474225FBB5FF004763B4 /* FinishedListCell.xib */; };
 		59E1B03A25FC556D00B46A4A /* WishList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E1B03925FC556D00B46A4A /* WishList.swift */; };
@@ -53,7 +54,6 @@
 		59E971DF25FB003B008A7EF9 /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E971CC25FB003B008A7EF9 /* UINavigationBar.swift */; };
 		59E971E025FB003B008A7EF9 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E971CD25FB003B008A7EF9 /* UIFont.swift */; };
 		59E971E125FB003B008A7EF9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E971CE25FB003B008A7EF9 /* Color.swift */; };
-		59E971E225FB003B008A7EF9 /* KobisKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E971D025FB003B008A7EF9 /* KobisKey.swift */; };
 		59E971E325FB003B008A7EF9 /* NotoSansCJKkr-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 59E971D225FB003B008A7EF9 /* NotoSansCJKkr-Medium.otf */; };
 		59E971E425FB003B008A7EF9 /* NotoSansCJKkr-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 59E971D325FB003B008A7EF9 /* NotoSansCJKkr-Regular.otf */; };
 		59E971E525FB003B008A7EF9 /* NotoSansCJKkr-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 59E971D425FB003B008A7EF9 /* NotoSansCJKkr-Bold.otf */; };
@@ -78,8 +78,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2516E83825FB7C7A00ADD135 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyPageViewController.swift; path = TimeCapsule/Wish/MyPageViewController.swift; sourceTree = SOURCE_ROOT; };
-		2516E83925FB7C7A00ADD135 /* MyPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MyPageViewController.xib; path = TimeCapsule/Wish/MyPageViewController.xib; sourceTree = SOURCE_ROOT; };
 		2516E83E25FB855200ADD135 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		2516E84125FB890E00ADD135 /* URLType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLType.swift; sourceTree = "<group>"; };
 		2516E84425FB8A9400ADD135 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -95,7 +93,6 @@
 		25437B6825FC424A00F3C8EF /* EndPopUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EndPopUpViewController.xib; sourceTree = "<group>"; };
 		25437B6C25FC425000F3C8EF /* CapsuleInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapsuleInfo.swift; sourceTree = "<group>"; };
 		25437B6D25FC425000F3C8EF /* Marbles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Marbles.swift; sourceTree = "<group>"; };
-		25437B7125FC46EC00F3C8EF /* AddMarble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMarble.swift; sourceTree = "<group>"; };
 		5921F98525FBC7D600D097B4 /* Gaegu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaegu-Regular.ttf"; sourceTree = "<group>"; };
 		5921F98625FBC7D600D097B4 /* Gaegu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaegu-Bold.ttf"; sourceTree = "<group>"; };
 		5921F98725FBC7D700D097B4 /* Gaegu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaegu-Light.ttf"; sourceTree = "<group>"; };
@@ -105,6 +102,10 @@
 		5921F99525FBC82000D097B4 /* Spoqa Han Sans Neo Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Neo Regular.otf"; sourceTree = "<group>"; };
 		5921F99825FBC82800D097B4 /* Spoqa Han Sans Neo Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Neo Thin.otf"; sourceTree = "<group>"; };
 		59399AB825FC365E006CBE10 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		59BD6033262C6CF3009B4DE6 /* CompletedRocketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedRocketViewController.swift; sourceTree = "<group>"; };
+		59BD6034262C6CF3009B4DE6 /* CompletedRocketViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompletedRocketViewController.xib; sourceTree = "<group>"; };
+		59BD6040262C6D06009B4DE6 /* CompletedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedListViewController.swift; sourceTree = "<group>"; };
+		59BD6041262C6D06009B4DE6 /* CompletedListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompletedListViewController.xib; sourceTree = "<group>"; };
 		59D5474125FBB5FF004763B4 /* FinishedListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedListCell.swift; sourceTree = "<group>"; };
 		59D5474225FBB5FF004763B4 /* FinishedListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FinishedListCell.xib; sourceTree = "<group>"; };
 		59E1B03925FC556D00B46A4A /* WishList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishList.swift; sourceTree = "<group>"; };
@@ -126,7 +127,6 @@
 		59E971CC25FB003B008A7EF9 /* UINavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
 		59E971CD25FB003B008A7EF9 /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		59E971CE25FB003B008A7EF9 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		59E971D025FB003B008A7EF9 /* KobisKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KobisKey.swift; sourceTree = "<group>"; };
 		59E971D225FB003B008A7EF9 /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
 		59E971D325FB003B008A7EF9 /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
 		59E971D425FB003B008A7EF9 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
@@ -182,13 +182,13 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		252076FE25FB51F1004366E4 /* Capsule */ = {
+		252076FE25FB51F1004366E4 /* CapsuleNameEdit */ = {
 			isa = PBXGroup;
 			children = (
 				2520770025FB5235004366E4 /* CapsuleNameViewController.swift */,
 				2520770125FB5235004366E4 /* CapsuleNameViewController.xib */,
 			);
-			path = Capsule;
+			path = CapsuleNameEdit;
 			sourceTree = "<group>";
 		};
 		252076FF25FB5203004366E4 /* AddWish */ = {
@@ -217,6 +217,33 @@
 				25437B6825FC424A00F3C8EF /* EndPopUpViewController.xib */,
 			);
 			path = EndPopUp;
+			sourceTree = "<group>";
+		};
+		59BD602F262C6AD8009B4DE6 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				25437B6C25FC425000F3C8EF /* CapsuleInfo.swift */,
+				25437B6D25FC425000F3C8EF /* Marbles.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		59BD6030262C6ADF009B4DE6 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		59BD6032262C6B7F009B4DE6 /* Completed */ = {
+			isa = PBXGroup;
+			children = (
+				59BD6033262C6CF3009B4DE6 /* CompletedRocketViewController.swift */,
+				59BD6034262C6CF3009B4DE6 /* CompletedRocketViewController.xib */,
+				59BD6040262C6D06009B4DE6 /* CompletedListViewController.swift */,
+				59BD6041262C6D06009B4DE6 /* CompletedListViewController.xib */,
+			);
+			path = Completed;
 			sourceTree = "<group>";
 		};
 		59E1B03625FC51E800B46A4A /* ListDataManager */ = {
@@ -258,8 +285,8 @@
 			children = (
 				59E971C125FB003B008A7EF9 /* Configuration */,
 				59E971E825FB0047008A7EF9 /* Login */,
-				59E971F125FB0475008A7EF9 /* Wish */,
 				59E971F225FB0483008A7EF9 /* Main */,
+				59BD6032262C6B7F009B4DE6 /* Completed */,
 				59E971F325FB0496008A7EF9 /* CapsuleOpening */,
 				59E971AC25FB0007008A7EF9 /* AppDelegate.swift */,
 				59E971AE25FB0007008A7EF9 /* SceneDelegate.swift */,
@@ -276,7 +303,6 @@
 				59E971C225FB003B008A7EF9 /* Constant.swift */,
 				59E971C325FB003B008A7EF9 /* CommonClass */,
 				59E971C625FB003B008A7EF9 /* Extension */,
-				59E971CF25FB003B008A7EF9 /* Secret */,
 				59E971D125FB003B008A7EF9 /* Font */,
 				59E971D525FB003B008A7EF9 /* Base */,
 				2516E84125FB890E00ADD135 /* URLType.swift */,
@@ -307,14 +333,6 @@
 				59E971CE25FB003B008A7EF9 /* Color.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		59E971CF25FB003B008A7EF9 /* Secret */ = {
-			isa = PBXGroup;
-			children = (
-				59E971D025FB003B008A7EF9 /* KobisKey.swift */,
-			);
-			path = Secret;
 			sourceTree = "<group>";
 		};
 		59E971D125FB003B008A7EF9 /* Font */ = {
@@ -350,32 +368,22 @@
 				59E9720725FB0722008A7EF9 /* LoginViewController.xib */,
 				59E971FA25FB0598008A7EF9 /* Entity */,
 				59E971F925FB058E008A7EF9 /* DataManager */,
+				2520770625FB5DEF004366E4 /* Nickname */,
 			);
 			path = Login;
-			sourceTree = "<group>";
-		};
-		59E971F125FB0475008A7EF9 /* Wish */ = {
-			isa = PBXGroup;
-			children = (
-				25437B7125FC46EC00F3C8EF /* AddMarble.swift */,
-				2516E83825FB7C7A00ADD135 /* MyPageViewController.swift */,
-				2516E83925FB7C7A00ADD135 /* MyPageViewController.xib */,
-				2520770625FB5DEF004366E4 /* Nickname */,
-				252076FE25FB51F1004366E4 /* Capsule */,
-				252076FF25FB5203004366E4 /* AddWish */,
-			);
-			path = Wish;
 			sourceTree = "<group>";
 		};
 		59E971F225FB0483008A7EF9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				25437B6C25FC425000F3C8EF /* CapsuleInfo.swift */,
-				25437B6D25FC425000F3C8EF /* Marbles.swift */,
-				25437B6625FC424A00F3C8EF /* EndPopUp */,
+				59BD602F262C6AD8009B4DE6 /* Entity */,
+				59BD6030262C6ADF009B4DE6 /* DataManager */,
 				2516E83E25FB855200ADD135 /* GameScene.swift */,
 				59E9721325FB1581008A7EF9 /* MainViewController.swift */,
 				59E9721425FB1581008A7EF9 /* MainViewController.xib */,
+				252076FF25FB5203004366E4 /* AddWish */,
+				252076FE25FB51F1004366E4 /* CapsuleNameEdit */,
+				25437B6625FC424A00F3C8EF /* EndPopUp */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -506,12 +514,13 @@
 				59D5474425FBB5FF004763B4 /* FinishedListCell.xib in Resources */,
 				59E971E425FB003B008A7EF9 /* NotoSansCJKkr-Regular.otf in Resources */,
 				2520770B25FB5E55004366E4 /* NicknameViewController.xib in Resources */,
-				2516E83B25FB7C7A00ADD135 /* MyPageViewController.xib in Resources */,
 				59E971B925FB000C008A7EF9 /* LaunchScreen.storyboard in Resources */,
 				5921F99325FBC81700D097B4 /* Spoqa Han Sans Neo Medium.otf in Resources */,
+				59BD6043262C6D06009B4DE6 /* CompletedListViewController.xib in Resources */,
 				59E971B625FB000C008A7EF9 /* Assets.xcassets in Resources */,
 				59E971B425FB0007008A7EF9 /* Main.storyboard in Resources */,
 				5921F98925FBC7D700D097B4 /* Gaegu-Bold.ttf in Resources */,
+				59BD6036262C6CF3009B4DE6 /* CompletedRocketViewController.xib in Resources */,
 				5921F99025FBC80F00D097B4 /* Spoqa Han Sans Neo Light.otf in Resources */,
 				252076EF25FB3A8D004366E4 /* AddWishViewController.xib in Resources */,
 				25437B6A25FC424A00F3C8EF /* EndPopUpViewController.xib in Resources */,
@@ -592,12 +601,14 @@
 				252076F925FB44E0004366E4 /* TagCollectionViewCell.swift in Sources */,
 				59E971DF25FB003B008A7EF9 /* UINavigationBar.swift in Sources */,
 				59E9723425FB4CE6008A7EF9 /* UserModel.swift in Sources */,
+				59BD6035262C6CF3009B4DE6 /* CompletedRocketViewController.swift in Sources */,
 				59E971DC25FB003B008A7EF9 /* String.swift in Sources */,
 				59E9726525FB7B13008A7EF9 /* WishlistCell.swift in Sources */,
 				59E971DA25FB003B008A7EF9 /* Date.swift in Sources */,
 				2520770A25FB5E55004366E4 /* NicknameViewController.swift in Sources */,
 				59E971DD25FB003B008A7EF9 /* UIButton.swift in Sources */,
 				25437B6925FC424A00F3C8EF /* EndPopUpViewController.swift in Sources */,
+				59BD6042262C6D06009B4DE6 /* CompletedListViewController.swift in Sources */,
 				59E971F525FB0512008A7EF9 /* UIViewController.swift in Sources */,
 				59E971AF25FB0007008A7EF9 /* SceneDelegate.swift in Sources */,
 				59D5474325FBB5FF004763B4 /* FinishedListCell.swift in Sources */,
@@ -610,12 +621,9 @@
 				59E9722025FB1B4B008A7EF9 /* ListViewController.swift in Sources */,
 				59E971D725FB003B008A7EF9 /* Constant.swift in Sources */,
 				59E971E625FB003B008A7EF9 /* BaseViewController.swift in Sources */,
-				2516E83A25FB7C7A00ADD135 /* MyPageViewController.swift in Sources */,
 				2516E84225FB890E00ADD135 /* URLType.swift in Sources */,
 				59E971D825FB003B008A7EF9 /* IndicatorView.swift in Sources */,
 				25437B6F25FC425000F3C8EF /* Marbles.swift in Sources */,
-				59E971E225FB003B008A7EF9 /* KobisKey.swift in Sources */,
-				25437B7225FC46EC00F3C8EF /* AddMarble.swift in Sources */,
 				2516E84525FB8A9400ADD135 /* NetworkService.swift in Sources */,
 				2520770225FB5235004366E4 /* CapsuleNameViewController.swift in Sources */,
 				25437B6E25FC425000F3C8EF /* CapsuleInfo.swift in Sources */,

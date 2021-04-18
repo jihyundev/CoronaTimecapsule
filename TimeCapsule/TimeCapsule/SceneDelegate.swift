@@ -16,8 +16,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
         guard let scene = (scene as? UIWindowScene) else { return }
-        if ud.string(forKey: "loginJWTToken") != nil {
+        if let token = ud.string(forKey: "loginJWTToken") {
             // jwt 토큰이 있을 경우 자동로그인 후 메인으로 이동
+            print("token: \(token)")
             self.window = UIWindow(windowScene: scene)
             window?.rootViewController = MainViewController()
             window?.makeKeyAndVisible()

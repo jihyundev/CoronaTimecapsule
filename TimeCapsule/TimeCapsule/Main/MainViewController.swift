@@ -158,24 +158,6 @@ class MainViewController: UIViewController {
         }
     }
     
-//    func getMarbles(index: Int) {
-//        let headers: HTTPHeaders = ["X-ACCESS-TOKEN": Constant.testToken]
-//        let parameters = ["marbleColor": "\(index)"]
-//        NetworkService.getData(type: .marbleList, headers: headers, parameters: parameters) { [weak self] (result: Result<Marbles,APIError>) in
-//            guard let self = self else {return}
-//            switch result {
-//            case .success(let model):
-//                self.marbles = []
-//                model.marbleList.forEach {
-//                    print($0.marbleID)
-//                    self.marbles.append($0.marbleID)
-//                }
-//            case .failure(let error):
-//                print(#function, error.localizedDescription)
-//            }
-//        }
-//    }
-    
     func getAllMarbles() {
         print(#function)
         let headers: HTTPHeaders = ["Accept": "application/json",
@@ -195,11 +177,6 @@ class MainViewController: UIViewController {
                 print(#function, error.localizedDescription)
             }
         }
-//        let url = URLType.marbleList.makeURL
-//        AF.request(url, headers: headers).responseJSON { response in
-//            print(response)
-//
-//        }
 
     }
     

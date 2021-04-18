@@ -145,17 +145,6 @@ class AddWishViewController: UIViewController{
         let headers: HTTPHeaders = ["X-ACCESS-TOKEN": Constant.testToken]
         let params = ["content": content,
                       "marbleColor": "\(index)"]
-//        NetworkService.postData(type: .addMarble, headers: headers, parameters: params) { [weak self] (result: Result<AddMarble,APIError>) in
-//            guard let self = self else { return }
-//            switch result {
-//            case .success(let model):
-//
-//                self.delegate?.reloadView()
-//                self.dismiss(animated: true, completion: nil)
-//            case .failure(let error):
-//                print(error.localizedDescription)
-//            }
-//        }
         
         let url = URLType.addMarble.makeURL
         AF.request(url, method: .post, parameters: params, encoder: JSONParameterEncoder.default, headers: headers)
@@ -186,7 +175,6 @@ extension AddWishViewController: UICollectionViewDataSource, UICollectionViewDel
         tagID = indexPath.item
         tagBaseCircleView.backgroundColor = mainColorSet[tagID]
         self.tagView.removeFromSuperview()
-        
     }
 }
 

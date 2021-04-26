@@ -10,7 +10,8 @@ import CoreMotion
 
 class GameScene: SKScene {
     struct PhysicsCategory {
-        static let none: UInt32 = UInt32.max
+        static let none: UInt32 = 0
+        static let all: UInt32 = UInt32.max
         static let wall: UInt32 = 0b1 // 1
         static let tile: UInt32 = 0b10 // 2
     }
@@ -36,6 +37,7 @@ class GameScene: SKScene {
         manager.accelerometerUpdateInterval = 0.1
         manager.startAccelerometerUpdates(to: .main) { data, error in
             self.physicsWorld.gravity = CGVector(dx: CGFloat((data?.acceleration.x)!) * 2, dy: CGFloat((data?.acceleration.y)!) * 2)
+            self.physicsWorld.contactDelegate = self
         }
     }
     
@@ -61,8 +63,8 @@ class GameScene: SKScene {
         tile.physicsBody?.affectedByGravity = true
         
         tile.physicsBody?.categoryBitMask = PhysicsCategory.tile
-        tile.physicsBody?.collisionBitMask = PhysicsCategory.none
-        tile.physicsBody?.fieldBitMask = PhysicsCategory.none
+        tile.physicsBody?.collisionBitMask = PhysicsCategory.all
+        tile.physicsBody?.fieldBitMask = PhysicsCategory.all
         tile.physicsBody?.contactTestBitMask = PhysicsCategory.wall
         tile.physicsBody?.usesPreciseCollisionDetection = true
         
@@ -84,8 +86,8 @@ class GameScene: SKScene {
             tile.physicsBody?.affectedByGravity = false
             
             tile.physicsBody?.categoryBitMask = PhysicsCategory.wall
-            tile.physicsBody?.collisionBitMask = PhysicsCategory.none
-            tile.physicsBody?.fieldBitMask = PhysicsCategory.none
+            tile.physicsBody?.collisionBitMask = PhysicsCategory.all
+            tile.physicsBody?.fieldBitMask = PhysicsCategory.all
             tile.physicsBody?.contactTestBitMask = PhysicsCategory.tile
             tile.physicsBody?.usesPreciseCollisionDetection = true
             
@@ -105,8 +107,8 @@ class GameScene: SKScene {
             tile.physicsBody?.affectedByGravity = false
             
             tile.physicsBody?.categoryBitMask = PhysicsCategory.wall
-            tile.physicsBody?.collisionBitMask = PhysicsCategory.none
-            tile.physicsBody?.fieldBitMask = PhysicsCategory.none
+            tile.physicsBody?.collisionBitMask = PhysicsCategory.all
+            tile.physicsBody?.fieldBitMask = PhysicsCategory.all
             tile.physicsBody?.contactTestBitMask = PhysicsCategory.tile
             return tile
         }()
@@ -126,8 +128,8 @@ class GameScene: SKScene {
             tile.physicsBody?.affectedByGravity = false
             
             tile.physicsBody?.categoryBitMask = PhysicsCategory.wall
-            tile.physicsBody?.collisionBitMask = PhysicsCategory.none
-            tile.physicsBody?.fieldBitMask = PhysicsCategory.none
+            tile.physicsBody?.collisionBitMask = PhysicsCategory.all
+            tile.physicsBody?.fieldBitMask = PhysicsCategory.all
             tile.physicsBody?.contactTestBitMask = PhysicsCategory.tile
             return tile
         }()
@@ -146,8 +148,8 @@ class GameScene: SKScene {
             tile.physicsBody?.affectedByGravity = false
             
             tile.physicsBody?.categoryBitMask = PhysicsCategory.wall
-            tile.physicsBody?.collisionBitMask = PhysicsCategory.none
-            tile.physicsBody?.fieldBitMask = PhysicsCategory.none
+            tile.physicsBody?.collisionBitMask = PhysicsCategory.all
+            tile.physicsBody?.fieldBitMask = PhysicsCategory.all
             tile.physicsBody?.contactTestBitMask = PhysicsCategory.tile
             return tile
         }()
@@ -156,4 +158,10 @@ class GameScene: SKScene {
     }
     
 
+}
+extension GameScene: SKPhysicsContactDelegate {
+    func didBegin(_ contact: SKPhysicsContact) {
+        print("GameScene - didBegin() called")
+        HapticsManager.shared.vibrate(for: .success)
+    }
 }

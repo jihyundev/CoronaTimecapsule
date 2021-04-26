@@ -161,7 +161,6 @@ class GameScene: SKScene {
 }
 extension GameScene: SKPhysicsContactDelegate {
     func didBegin(_ contact: SKPhysicsContact) {
-        print("GameScene - didBegin() called")
-        HapticsManager.shared.vibrate(for: .success)
+        HapticsManager.shared.impactVibrate()
     }
 }

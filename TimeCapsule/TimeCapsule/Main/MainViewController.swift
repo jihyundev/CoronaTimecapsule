@@ -13,6 +13,8 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var backImageView: UIImageView!
     @IBOutlet weak var gameView: UIView!
+    @IBOutlet weak var shadowView: UIImageView!
+    
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var editCapsuleNameButton: UIButton!
     @IBOutlet weak var listButton: UIButton!
@@ -94,6 +96,7 @@ class MainViewController: UIViewController {
     }
     
     func setupUI() {
+        shadowView.isHidden = true
         listButton.layer.cornerRadius = 21
         listButton.borderWidth = 3
         listButton.borderColor = UIColor.init(hex: 0x76FF95)

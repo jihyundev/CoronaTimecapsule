@@ -381,12 +381,12 @@
 				59BD602F262C6AD8009B4DE6 /* Entity */,
 				59BD6030262C6ADF009B4DE6 /* DataManager */,
 				2516E83E25FB855200ADD135 /* GameScene.swift */,
+				59B5198E263696B300FEFF00 /* HapticsManager.swift */,
 				59E9721325FB1581008A7EF9 /* MainViewController.swift */,
 				59E9721425FB1581008A7EF9 /* MainViewController.xib */,
 				252076FF25FB5203004366E4 /* AddWish */,
 				252076FE25FB51F1004366E4 /* CapsuleNameEdit */,
 				25437B6625FC424A00F3C8EF /* EndPopUp */,
-				59B5198E263696B300FEFF00 /* HapticsManager.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";

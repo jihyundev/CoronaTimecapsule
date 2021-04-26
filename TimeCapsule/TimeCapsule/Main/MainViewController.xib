@@ -24,6 +24,7 @@
                 <outlet property="listButton" destination="gQV-3l-bCN" id="M2E-Uu-KD7"/>
                 <outlet property="lockImageView" destination="pIP-Gb-v4F" id="pSB-pN-unf"/>
                 <outlet property="nameLabel" destination="BxY-LE-dtE" id="Zgo-a8-exZ"/>
+                <outlet property="shadowView" destination="CEI-v2-WMa" id="60g-CW-SXr"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -32,8 +33,17 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_img" translatesAutoresizingMaskIntoConstraints="NO" id="UBf-zc-Kd0">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="UBf-zc-Kd0">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="hF7-fI-Qcf">
+                    <rect key="frame" x="0.0" y="706" width="414" height="190"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="190" id="GC5-h8-YC9"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shadow" translatesAutoresizingMaskIntoConstraints="NO" id="CEI-v2-WMa">
+                    <rect key="frame" x="24" y="724" width="366" height="136"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sEq-He-Vo3" customClass="SKView">
                     <rect key="frame" x="107" y="373" width="210" height="210"/>
@@ -69,13 +79,13 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="우주선 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxY-LE-dtE">
-                    <rect key="frame" x="25" y="91" width="106.5" height="26.5"/>
+                    <rect key="frame" x="25" y="91" width="106.5" height="26"/>
                     <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="22"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmL-WM-Tpj">
-                    <rect key="frame" x="131.5" y="89.5" width="30" height="30"/>
+                    <rect key="frame" x="131.5" y="89" width="30" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="30" id="DKl-r2-sax"/>
                         <constraint firstAttribute="height" constant="30" id="p4G-0G-FfI"/>
@@ -115,14 +125,21 @@
                 <constraint firstItem="CWP-Yp-vn4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="7Vw-QF-C3K"/>
                 <constraint firstAttribute="bottom" secondItem="UBf-zc-Kd0" secondAttribute="bottom" id="AGg-OU-R5x"/>
                 <constraint firstItem="UBf-zc-Kd0" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="CZX-UQ-rgn"/>
+                <constraint firstItem="CEI-v2-WMa" firstAttribute="top" secondItem="sEq-He-Vo3" secondAttribute="bottom" constant="141" id="Dhx-XY-mfH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CEI-v2-WMa" secondAttribute="trailing" constant="24" id="Dre-Lg-dpY"/>
+                <constraint firstAttribute="bottom" secondItem="hF7-fI-Qcf" secondAttribute="bottom" id="I1a-Xe-gYT"/>
                 <constraint firstItem="UBf-zc-Kd0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IXI-Wb-kaZ"/>
                 <constraint firstItem="lmL-WM-Tpj" firstAttribute="centerY" secondItem="BxY-LE-dtE" secondAttribute="centerY" id="Jue-ze-38j"/>
+                <constraint firstItem="CEI-v2-WMa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="RD5-ku-DMw"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1Gr-9g-WCX" secondAttribute="trailing" constant="25" id="SXT-2f-Z6r"/>
+                <constraint firstItem="hF7-fI-Qcf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WU3-fI-RFk"/>
                 <constraint firstItem="sEq-He-Vo3" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="30" id="Yas-nr-dpE"/>
                 <constraint firstItem="gQV-3l-bCN" firstAttribute="centerY" secondItem="CWP-Yp-vn4" secondAttribute="centerY" id="ZKc-Qa-oqV"/>
                 <constraint firstItem="BxY-LE-dtE" firstAttribute="leading" secondItem="CWP-Yp-vn4" secondAttribute="leading" id="ZQG-5q-qgA"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gQV-3l-bCN" secondAttribute="trailing" constant="26" id="b6H-xw-U7F"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hF7-fI-Qcf" secondAttribute="trailing" id="bCY-C6-5Pd"/>
                 <constraint firstItem="CWP-Yp-vn4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="12" id="bDL-Rv-Fqz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="CEI-v2-WMa" secondAttribute="bottom" constant="2" id="ewf-A0-rfY"/>
                 <constraint firstItem="pIP-Gb-v4F" firstAttribute="top" secondItem="gQV-3l-bCN" secondAttribute="top" id="i2a-GR-VZ2"/>
                 <constraint firstItem="sEq-He-Vo3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="5" id="o6Z-Vd-fyR"/>
                 <constraint firstItem="UBf-zc-Kd0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="q5b-1t-Hfi"/>
@@ -134,10 +151,12 @@
         </view>
     </objects>
     <resources>
-        <image name="background_img" width="375" height="812"/>
+        <image name="background" width="375" height="812"/>
+        <image name="ground" width="375" height="200"/>
         <image name="icon_Lock" width="30" height="30"/>
         <image name="icon_revise" width="30" height="30"/>
         <image name="icon_rocket" width="30" height="30"/>
+        <image name="shadow" width="331" height="160"/>
         <image name="small_dol_3" width="50" height="50"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
